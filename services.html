@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI/UX Design-Agency</title>
+  <link rel="stylesheet" href="output.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Go to Top Button -->
+  <a href="/services.html">
+    <button class="fixed bottom-6 text-white right-6 bg-black px-2 py-1 rounded-[2px] hover:cursor-pointer z-100"><i
+        class="fa-solid fa-angle-up"></i></button>
+  </a>
+  <!-- -----------Hero Section------------ -->
+  <div class="w-full bg-[#12141D] relative overflow-hidden">
+    <!-- Upper hero: header + content (bg image ends at button center) -->
+    <div id="hero-upper" class="relative overflow-hidden">
+      <img id="hero-bg" src="/images/hero_bg_.png" alt=""
+        class="absolute top-0 left-0 w-full h-full brightness-30 opacity-10 object-cover object-top z-0 pointer-events-none lg:h-[600px]" />
+
+      <!-- ---------Header-------- -->
+      <header
+        class="relative z-20 w-[90%] mx-auto grid grid-cols-[1fr_auto_1fr] items-center lg:mt-[48px] lg:mx-[20px]">
+        <a href="/index.html" class="shrink-0 col-start-1 justify-self-start">
+          <img src="/images/logo.svg" alt="Web Rocket logo" class="h-6 w-auto lg:h-8" />
+        </a>
+        <!-- Desktop navigation -->
+        <nav class="hidden lg:flex col-start-2 items-center gap-8 justify-self-center lg:ml-[30px]"
+          aria-label="Main navigation">
+          <a href="/about.html"
+            class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">About</a>
+          <a href="/services.html"
+            class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">Services</a>
+          <a href="/blogs.html"
+            class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">Blog</a>
+          <a href="/portfolio.html"
+            class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">Portfolio</a>
+          <a href="/careers.html"
+            class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">Careers</a>
+          <a href="get_a_quote.html"
+            class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">Get a Quote</a>
+          <a href="/contact.html"
+            class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">Contact</a>
+        </nav>
+
+        <!-- Mobile toggle button -->
+        <button id="nav-toggle" type="button"
+          class="lg:hidden col-start-3 justify-self-end text-white text-2xl p-2 hover:text-[#D2FF28] transition-colors hover:cursor-pointer"
+          aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <i class="fa-solid fa-bars text-[#D2FF28]" id="nav-toggle-icon"></i>
+        </button>
+      </header>
+
+      <!-- Mobile navigation -->
+      <nav id="mobile-nav"
+        class="hidden lg:hidden relative z-20 w-full h-auto mx-auto flex-col border-t border-white/10 pt-4 bg-white"
+        aria-label="Mobile navigation">
+        <a href="/about.html"
+          class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">About</a>
+        <a href="/services.html"
+          class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">Services</a>
+        <a href="/blogs.html"
+          class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">Blogs</a>
+        <a href="/portfolio.html"
+          class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">Portfolio</a>
+        <a href="/careers.html"
+          class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">Careers</a>
+        <a href="/get_a_quote.html"
+          class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">Get
+          a Quote</a>
+        <a href="/contact.html"
+          class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">Contact</a>
+        <button
+          class="hover:cursor-pointer my-6 bg-white h-11 w-full border-0 rounded-4xl font-bold hover:bg-[#8DB706] hover:text-[#12141D] duration-300">
+          Schedule a Call Now
+        </button>
+      </nav>
+
+      <!-- Hero content -->
+      <div class=" relative z-20 w-full h-auto flex flex-col md:flex-row md:items-center lg:h-140">
+        <div
+          class="relative z-20 w-[90%] max-w-5xl mx-auto flex flex-col gap-[10px] items-center justify-start text-center px-4 lg:mt-3 md:gap-3 md:items-start md:text-start md:pl-8 md:py-15">
+          <h1
+            class="text-white text-[35px] font-[600] mt-4 leading-tight font-['Urbanist'] md:text-[42px] md:leading-[50px] lg:text-[68px] lg:leading-[82px] lg:mt-0">
+            UI/UX Design
+          </h1>
+          <p
+            class="text-white/80 text-[16px] font-normal leading-[25px] mb-3 max-w-xl md:text-[15px] lg:text-[16px] lg:leading-[27px]">
+            We craft user experiences that drive action, not just admiration. Whether it’s a conversion-focused SaaS
+            dashboard or a mobile app that users can’t put down, our process blends behavioral psychology with
+            pixel-perfect execution.
+          </p>
+          <a id="hero-cta-btn" href="#"
+            class="relative z-10 inline-flex items-center justify-center bg-[#D2FF28] text-[#12141D] text-[13px] font-semibold px-8 py-3 rounded-full hover:opacity-90 transition-opacity">
+            Get a Free UX Audit
+          </a>
+        </div>
+        <!-- Hero image slider -->
+        <div
+          class="relative z-20 w-[88%] mx-auto mt-10 lg:mt-12 mb-10 lg:mb-14 rounded-2xl outline-[1px] outline-[#393B51] overflow-hidden md:h-60 md:w-190 md:mr-10 lg:h-70"
+          aria-label="Hero image slider">
+          <div class="shrink-0">
+            <img src="/images/service_hero_pic1.jpg" alt="Slide 1" class="w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Vertical CTA — large screens only -->
+    <a href="#" aria-label="Schedule a Call Now"
+      class="hidden lg:flex absolute right-0 top-0 z-20 h-[40px] lg:mt-[40px] w-45 mt-[15px] py-[15px] bg-white hover:bg-[#D2FF28] rounded-full transition-colors duration-300 items-center justify-center group mr-[20px]">
+      <span
+        class="flex flex-col items-center justify-center text-[14px] font-semibold leading-[21px] text-[#12141D] select-none">
+        Schedule a Call Now
+    </a>
+  </div>
+  <!-- Design That Works Section -->
+  <div class="relative w-full h-150 md:h-200">
+
+    <!-- Upper half - content (50%) -->
+    <div class="w-full h-1/2 bg-white flex flex-col items-center justify-start pt-[40px] px-4 md:h-[60%]">
+      <h3
+        class="text-center font-['Urbanist'] text-[29px] leading-[39px] md:text-[44px] md:leading-[53px] font-semibold text-[#110b11] ">
+        Design That Works as Hard as You Do
+      </h3>
+      <p
+        class="text-center font-['Poppins, sans-serif'] text-[15px] leading-[25px] md:text-[16px] md:leading-[27px] font-normal text-[#393b51] mt-[20px] max-w-xl">
+        We craft user-centric interfaces that blend aesthetics with functionality, turning complex workflows into
+        intuitive experiences. Through wireframing, prototyping, and usability testing, we design digital products that
+        reduce friction, boost engagement, and drive conversions—whether it's a SaaS dashboard, mobile app, or
+        e-commerce platform.
+      </p>
+    </div>
+
+    <!-- Lower half - dark checklist (50%) -->
+    <div
+      class="w-full h-1/2 bg-[#12141D] flex flex-col justify-end gap-6 px-4 pb-[30px] relative z-0 md:h-[40%] md:flex-row md:items-end md:justify-around">
+
+
+      <!-- Item 3 - always visible -->
+      <div class="flex items-center gap-3 relative">
+        <div class="h-6 w-6 rounded-full bg-[#D2FF28] flex items-center justify-center shrink-0">
+          <i class="fa-solid fa-check text-black text-[12px]"></i>
+        </div>
+        <span class="font-['Poppins, sans-serif'] text-[15px] text-white">Fixed Pricing</span>
+      </div>
+      <!-- Item 3 - always visible -->
+      <div class="flex items-center gap-3 relative">
+        <div class="h-6 w-6 rounded-full bg-[#D2FF28] flex items-center justify-center shrink-0">
+          <i class="fa-solid fa-check text-black text-[12px]"></i>
+        </div>
+        <span class="font-['Poppins, sans-serif'] text-[15px] text-white">2-Week Shipment</span>
+      </div>
+      <!-- Item 3 - always visible -->
+      <div class="flex items-center gap-3 relative">
+        <div class="h-6 w-6 rounded-full bg-[#D2FF28] flex items-center justify-center shrink-0">
+          <i class="fa-solid fa-check text-black text-[12px]"></i>
+        </div>
+        <span class="font-['Poppins, sans-serif'] text-[15px] text-white">Dedicated Support Team</span>
+      </div>
+    </div>
+
+    <!-- Image - overlaps the boundary: 40px into upper half, rest covers lower half -->
+    <img src="/images/service_design_pic1.png" alt="Design Process"
+      class="absolute w-[90%] h-60 object-cover rounded-2xl z-10 top-1/2 mx-7 mt-[-50px] md:h-100 md:mt-[-100px] lg:w-[80%] lg:mx-25" />
+  </div>
+  <!-- Our UI/UX Design Process Section -->
+  <div class="w-full bg-[#F5F5F5] flex flex-col items-center py-[40px] px-4 lg:py-20">
+
+    <!-- Main Heading - same size as previous section -->
+    <h2 class="text-center font-['Urbanist'] text-[33px] leading-[39px] font-semibold text-[#110b11] mb-[40px]">
+      Our UI/UX Design Process
+    </h2>
+
+    <!-- Cards wrapper -->
+    <div class="w-full flex flex-col md:flex-row lg:flex-row gap-6">
+
+      <!-- Card 1 -->
+      <div class="w-full md:w-1/3 lg:w-1/3 bg-white rounded-2xl flex flex-col items-center text-center gap-4 p-6">
+        <div class="h-8 w-8 rounded-full bg-black flex items-center justify-center">
+          <i class="fa-solid fa-check text-[#D2FF28] text-[18px]"></i>
+        </div>
+        <h3
+          class="font-['Urbanist'] text-[22px] md:text-[26px] lg:text-[26px] leading-[26px] md:leading-[31px] lg:leading-[31px] font-semibold text-[#110b11]">
+          1. Discover & Define
+        </h3>
+        <p
+          class="font-['Poppins, sans-serif'] text-[15px] md:text-[16px] lg:text-[16px] leading-[25px] md:leading-[27px] lg:leading-[27px] font-normal text-[#393b51]">
+          We start by learning your business – its ambitions & challenges.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="w-full md:w-1/3 lg:w-1/3 bg-white rounded-2xl flex flex-col items-center text-center gap-4 p-6">
+        <div class="h-8 w-8 rounded-full bg-black flex items-center justify-center">
+          <i class="fa-solid fa-check text-[#D2FF28] text-[18px]"></i>
+        </div>
+        <h3
+          class="font-['Urbanist'] text-[22px] md:text-[26px] lg:text-[26px] leading-[26px] md:leading-[31px] lg:leading-[31px] font-semibold text-[#110b11]">
+          2. Ideate & Prototype
+        </h3>
+        <p
+          class="font-['Poppins, sans-serif'] text-[15px] md:text-[16px] lg:text-[16px] leading-[25px] md:leading-[27px] lg:leading-[27px] font-normal text-[#393b51]">
+          Transforming insights into tangible designs – Accelerate your growth.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="w-full md:w-1/3 lg:w-1/3 bg-white rounded-2xl flex flex-col items-center text-center gap-4 p-6">
+        <div class="h-8 w-8 rounded-full bg-black flex items-center justify-center">
+          <i class="fa-solid fa-check text-[#D2FF28] text-[18px]"></i>
+        </div>
+        <h3
+          class="font-['Urbanist'] text-[22px] md:text-[26px] lg:text-[26px] leading-[26px] md:leading-[31px] lg:leading-[31px] font-semibold text-[#110b11]">
+          3. Refine & Validate
+        </h3>
+        <p
+          class="font-['Poppins, sans-serif'] text-[15px] md:text-[16px] lg:text-[16px] leading-[25px] md:leading-[27px] lg:leading-[27px] font-normal text-[#393b51]">
+          Perfecting every pixel with real user feedback & user surveys.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Design Superpowers Section -->
+  <div class="w-full flex items-center flex-col md:justify-between md:flex-row md:h-[110vh] lg:h-screen">
+
+    <!-- Image -->
+    <img src="/images/services_manWithHeadphone1.png" alt="Design Superpowers"
+      class="w-full h-screen md:h-full lg:h-full object-cover md:w-[45%]" />
+
+    <!-- Text content (heading + 3 items) -->
+    <div
+      class="w-[90%] flex flex-col justify-center gap-6 py-[40px] bg-white md:w-[42%] md:h-full lg:w-[45%] md:mr-[50px] lg:h-full">
+
+      <!-- Main heading - same size as previous sections, now lives inside this box -->
+      <h2
+        class="font-['Urbanist'] text-[33px] leading-[39px] font-semibold text-[#110b11] lg:text-[44px] lg:leading-[53px] lg:mb-3">
+        Our UI/UX Design Superpowers
+      </h2>
+
+      <!-- Item 1 -->
+      <div class="flex flex-col gap-2 pb-6 border-b border-black">
+        <h3
+          class="font-['Urbanist'] text-[16px] md:text-[20px] leading-[20px] md:leading-[24px] font-semibold text-[#110b11]">
+          Psychology-Driven Design
+        </h3>
+        <p class="font-[Poppins,sans-serif] text-[15px] leading-[25px] font-normal text-[#393b51]">
+          We apply proven principles from behavioral science to create designs that guide user behavior, reduce
+          friction, and drive better outcomes.
+        </p>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="flex flex-col gap-2 pb-6 border-b border-black">
+        <h3
+          class="font-['Urbanist'] text-[16px] md:text-[20px] leading-[20px] md:leading-[24px] font-semibold text-[#110b11]">
+          Real-User Testing
+        </h3>
+        <p class="font-[Poppins,sans-serif] text-[15px] leading-[25px] font-normal text-[#393b51]">
+          We validate every prototype with 5–10 real users from target audience, uncovering actionable insights before a
+          single line of code is written.
+        </p>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="flex flex-col gap-2 pb-6 border-b border-black">
+        <h3
+          class="font-['Urbanist'] text-[16px] md:text-[20px] leading-[20px] md:leading-[24px] font-semibold text-[#110b11]">
+          Dev-Ready Handoffs
+        </h3>
+        <p class="font-[Poppins,sans-serif] text-[15px] leading-[25px] font-normal text-[#393b51]">
+          Developers receive clean, pixel-perfect Figma files complete with auto-generated specs, assets, and
+          documentation.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- FAQ Section -->
+  <div class="w-full bg-[#F5F5F5] flex flex-col items-center py-[40px] px-4 md:py-20">
+
+    <!-- Main Heading -->
+    <h1
+      class="text-center font-['Urbanist'] text-[33px] md:text-[44px] md:mx-70 leading-[44px] md:leading-[53px] font-semibold text-[#110b11] mb-[40px]">
+      Your Guide to Common Questions & Solutions
+    </h1>
+
+    <div class="w-full flex flex-col gap-4">
+
+      <!-- FAQ Item 1 - expanded by default -->
+      <div class="w-full bg-white rounded-2xl px-6 py-5">
+        <button onclick="toggleFaq('faq1')" class="w-full flex items-center justify-between text-left">
+          <span
+            class="font-['Urbanist'] text-[16px] md:text-[24px] leading-[20px] md:leading-[29px] font-semibold text-[#110b11]">
+            How many revisions are included
+          </span>
+          <i id="faq1-icon" class="fa-solid fa-minus text-[#110b11] text-[14px] shrink-0 ml-4"></i>
+        </button>
+        <p id="faq1-answer"
+          class="font-[Poppins,sans-serif] text-[15px] md:text-[16px] lg:text-[16px] leading-[25px] md:leading-[27px] lg:leading-[27px] font-normal text-[#393b51] mt-4">
+          All projects include 3 rounds of revisions at key milestones. Need more? Additional revisions are billed at
+          $85/hour (we'll always get your approval first).
+        </p>
+      </div>
+
+      <!-- FAQ Item 2 - collapsed -->
+      <div class="w-full bg-white rounded-2xl px-6 py-5">
+        <button onclick="toggleFaq('faq2')" class="w-full flex items-center justify-between text-left">
+          <span
+            class="font-['Urbanist'] text-[16px] md:text-[24px] leading-[20px] md:leading-[29px] font-semibold text-[#110b11]">
+            What are your charges?
+          </span>
+          <i id="faq2-icon" class="fa-solid fa-plus text-[#110b11] text-[14px] shrink-0 ml-4"></i>
+        </button>
+        <p id="faq2-answer"
+          class="hidden font-[Poppins,sans-serif] text-[15px] md:text-[16px] lg:text-[16px] leading-[25px] md:leading-[27px] lg:leading-[27px] font-normal text-[#393b51] mt-4">
+          Our pricing depends on project scope, complexity, and timeline. Reach out for a custom quote tailored to your
+          business needs.
+        </p>
+      </div>
+
+      <!-- FAQ Item 3 - collapsed -->
+      <div class="w-full bg-white rounded-2xl px-6 py-5">
+        <button onclick="toggleFaq('faq3')" class="w-full flex items-center justify-between text-left">
+          <span
+            class="font-['Urbanist'] text-[16px] md:text-[24px] leading-[20px] md:leading-[29px] font-semibold text-[#110b11]">
+            What is your MVP process?
+          </span>
+          <i id="faq3-icon" class="fa-solid fa-plus text-[#110b11] text-[14px] shrink-0 ml-4"></i>
+        </button>
+        <p id="faq3-answer"
+          class="hidden font-[Poppins,sans-serif] text-[15px] md:text-[16px] lg:text-[16px] leading-[25px] md:leading-[27px] lg:leading-[27px] font-normal text-[#393b51] mt-4">
+          We start with core features, validate with real users, then iterate quickly based on feedback and data.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- Meet The Team / hero footer -->
+  <div
+    class="w-full bg-[#12141D] relative h-120 md:h-130 lg:h-screen flex flex-col gap-5 justify-center items-center overflow-hidden">
+
+    <!-- Background W Shape -->
+    <div
+      class="absolute inset-0 bg-[url('images/hero_bg_.png')] brightness-40 opacity-10 object-cover object-top object-left bg-cover bg-center  pointer-events-none">
+    </div>
+
+
+    <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+
+      <!-- Profile Image -->
+      <div class="w-20 h-20 mx-auto mb-8 rounded-full overflow-hidden shadow-2xl">
+        <img src="/images/index_boy_wearing_glasses1.png" alt="Lead Designer" class="w-full h-full object-cover">
+      </div>
+
+      <!-- Heading -->
+      <h2
+        class="text-3xl md:text-4xl font-semibold md:text-[44px] md:leading-[53px] font-['Urbanist'] text-white leading-tight mb-4">
+        Meet the Minds Behind the Magic
+      </h2>
+
+      <p class="text-white text-[15px] leading-[25px] md:text-[17px] md:leading-[27px] max-w-md mx-auto mb-10 ">
+        Get a free 30-minute strategy session with our lead designer.
+      </p>
+
+      <!-- CTA Button -->
+      <a href="#"
+        class="inline-block bg-[#D2FF28] hover:bg-[#B0E600] text-[#12141D] font-semibold text-md px-10 py-3 rounded-full transition-all  mb-10">
+        Book a Free Call
+      </a>
+
+      <!-- Email Option -->
+      <div class="">
+        <p class="text-white text-sm mb-1">Prefer Email?</p>
+        <a href="mailto:chris@webrocket.studio"
+          class="text-white hover:text-[#D2FF28] underline underline-offset-4 transition-colors">
+          <strong>chris@webrocket.studio</strong>
+        </a>
+      </div>
+
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-white pt-16 pb-10 border-t relative">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-10">
+
+        <!-- Column 1: Logo + Description -->
+        <div class="lg:col-span-4 ">
+          <div class="flex items-center gap-2 mb-2">
+            <!-- <span class="text-3xl font-bold text-[#D2FF28]">W</span> -->
+            <span><img src="images/footer-logo1.svg" alt="image is not found"></span>
+            <!-- <span class="text-2xl font-semibold tracking-tight">EB ROCKET</span> -->
+          </div>
+          <p class="text-gray-700 max-w-xs">
+            We craft high-performance digital <br> experiences that drive real <br> business results.
+          </p>
+
+          <!-- Social Icons -->
+          <div class="flex gap-4 mt-8">
+            <a href="#"
+              class="w-9 h-9 bg-gray-900 text-[#D5FE3C]   rounded-full flex items-center justify-center transition-all   hover:scale-125  duration-300">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#"
+              class="w-9 h-9 bg-gray-900 text-[#D5FE3C] rounded-full flex items-center justify-center    hover:scale-125  duration-300 transition-all">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#"
+              class="w-9 h-9 bg-gray-900 text-[#D5FE3C] rounded-full flex items-center justify-center  transition-all     hover:scale-125 duration-300">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="#"
+              class="w-9 h-9 bg-gray-900 text-[#D5FE3C] rounded-full flex items-center justify-center    hover:scale-125 transition-all duration-300">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="lg:col-span-2">
+          <h4 class="font-semibold text-lg mb-5">Quick Links</h4>
+          <ul class="space-y-3 text-gray-600">
+            <li><a href="/index.html" class="hover:text-black transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-black transition-colors">About</a></li>
+            <li><a href="blogs.html" class="hover:text-black transition-colors">Blog</a></li>
+            <li><a href="portfolio.html" class="hover:text-black transition-colors">Portfolio</a></li>
+            <li><a href="contact.html" class="hover:text-black transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Services -->
+        <div class="lg:col-span-3">
+          <h4 class="font-semibold text-lg mb-5">Services</h4>
+          <ul class="space-y-3 text-gray-600">
+            <li><a href="services.html" class="hover:text-black transition-colors">UI/UX Design</a></li>
+            <li><a href="#" class="hover:text-black transition-colors">Brand Design</a></li>
+            <li><a href="#" class="hover:text-black transition-colors">Webflow Development</a></li>
+            <li><a href="#" class="hover:text-black transition-colors">No-Code Development</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Column -->
+        <div class="lg:col-span-3">
+          <h4 class="font-semibold text-lg mb-5">Get the Latest Inspiration</h4>
+
+          <form id="newsletter-form" class="space-y-4">
+            <div>
+              <input type="email" id="email-input" placeholder="Enter your email *"
+                class="w-full px-5 py-2 border border-gray-300 rounded-[10px] focus:outline-none focus:border-black focus:ring-4 focus:ring-black/10 transition-all">
+              <p id="error-message" class="text-red-600 text-sm mt-1 hidden">This field is required.</p>
+            </div>
+
+            <button type="submit"
+              class="w-full bg-black py-2  rounded-[10px] font-normal text-white  hover:bg-[#282A32]   transition-all mt-4 hover:cursor-pointer">
+              Subscribe Now
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="mt-16 pt-8 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-6">
+          <p class="text-center text-gray-500 text-md">
+            Copyright © 2026 Web Rocket. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  <!-- ------------JavaScript----------- -->
+  <script>
+    const navToggle = document.getElementById("nav-toggle");
+    const mobileNav = document.getElementById("mobile-nav");
+    const navToggleIcon = document.getElementById("nav-toggle-icon");
+
+    navToggle.addEventListener("click", () => {
+      const isOpen = !mobileNav.classList.contains("hidden");
+      mobileNav.classList.toggle("hidden");
+      mobileNav.classList.toggle("flex");
+      navToggle.setAttribute("aria-expanded", String(!isOpen));
+      navToggleIcon.classList.toggle("fa-bars", isOpen);
+      navToggleIcon.classList.toggle("fa-xmark", !isOpen);
+    });
+
+    const heroSliderTrack = document.getElementById("hero-slider-track");
+    const heroSlides = heroSliderTrack.children.length;
+    let heroSlideIndex = 0;
+
+    setInterval(() => {
+      heroSlideIndex = (heroSlideIndex + 1) % heroSlides;
+      heroSliderTrack.style.transform = `translateX(-${heroSlideIndex * 100}%)`;
+    }, 4000);
+    function toggleFaq(id) {
+      const answer = document.getElementById(id + '-answer');
+      const icon = document.getElementById(id + '-icon');
+      answer.classList.toggle('hidden');
+      icon.classList.toggle('fa-plus');
+      icon.classList.toggle('fa-minus');
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,849 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home-Agency</title>
+  <link rel="stylesheet" href="output.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap" rel="stylesheet" />
+</head>
+
+<body class="font-poppins">
+  <!-- -----------Hero Section------------ -->
+  <div class="w-full bg-[#12141D] relative overflow-hidden">
+    <!-- Upper hero: header + content (bg image ends at button center) -->
+    <div id="hero-upper" class="relative overflow-hidden">
+      <img id="hero-bg" src="/images/hero_bg_.png" alt=""
+        class="absolute top-0 left-0 w-full h-full brightness-30 opacity-10 object-cover object-top z-0 pointer-events-none lg:h-[600px]" />
+
+      <!-- ---------Header-------- -->
+      <header
+        class="relative z-20 w-[90%] mx-auto grid grid-cols-[1fr_auto_1fr] items-center lg:mt-[48px] lg:mx-[20px]">
+        <a href="/index.html" class="shrink-0 col-start-1 justify-self-start">
+          <img src="/images/logo.svg" alt="Web Rocket logo" class="h-6 w-auto lg:h-8" />
+        </a>
+
+        <!-- Desktop navigation -->
+        <nav class="hidden lg:flex col-start-2 items-center gap-8 justify-self-center lg:ml-[30px]"
+          aria-label="Main navigation">
+          <a href="/about.html"
+            class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">About</a>
+          <a href="/services.html"
+            class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">Services</a>
+          <a href="/blogs.html"
+            class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">Blog</a>
+          <a href="/portfolio.html"
+            class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">Portfolio</a>
+          <a href="/careers.html"
+            class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">Careers</a>
+          <a href="/get_a_quote.html"
+            class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">Get a Quote</a>
+          <a href="/contact.html"
+            class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">Contact</a>
+        </nav>
+
+        <!-- Mobile toggle button -->
+        <button id="nav-toggle" type="button"
+          class="lg:hidden col-start-3 justify-self-end text-white text-2xl p-2 hover:text-[#D2FF28] transition-colors hover:cursor-pointer"
+          aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <i class="fa-solid fa-bars text-[#D2FF28]" id="nav-toggle-icon"></i>
+        </button>
+      </header>
+
+      <!-- Mobile navigation -->
+      <nav id="mobile-nav"
+        class="hidden lg:hidden relative z-20 w-full h-auto mx-auto flex-col border-t border-white/10 pt-4 bg-white"
+        aria-label="Mobile navigation">
+        <a href="/about.html"
+          class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">About</a>
+        <a href="/services.html"
+          class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">Services</a>
+        <a href="/blogs.html"
+          class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">Blogs</a>
+        <a href="/portfolio.html"
+          class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">Portfolio</a>
+        <a href="/careers.html"
+          class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">Careers</a>
+        <a href="/get_a_quote.html"
+          class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">Get
+          a Quote</a>
+        <a href="/contact.html"
+          class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">Contact</a>
+        <button
+          class="hover:cursor-pointer my-6 bg-white h-11 w-full border-0 rounded-4xl font-bold hover:bg-[#8DB706] hover:text-[#12141D] duration-300">
+          Schedule a Call Now
+        </button>
+      </nav>
+
+      <!-- Hero content -->
+      <div
+        class="relative z-20 w-[90%] max-w-5xl mx-auto flex flex-col gap-[10px] items-center justify-start text-center px-4 lg:mt-[50px] md:gap-[30px]">
+        <img src="/images/small_c.svg" alt="" class="h-8 w-auto lg:h-full" />
+        <p class="text-white text-[15px] font-[700] leading-[25px] tracking-[2px] lg:leading-[27px]">
+          TOP 100 DESIGN STUDIO IN USA
+        </p>
+        <h1
+          class="text-white text-[35px] font-[600] leading-tight font-['Urbanist'] md:text-[42px] md:leading-[50px] lg:text-[68px] lg:leading-[82px]">
+          Where Stunning Design Meets Flawless Functionality
+        </h1>
+        <p class="text-white/80 text-[16px] font-normal leading-[25px] mb-3 max-w-xl">
+          We craft high-converting websites, apps, and brands for startups,
+          agencies, and businesses that refuse to settle for good enough.
+        </p>
+        <a id="hero-cta-btn" href="#"
+          class="relative z-10 inline-flex items-center justify-center bg-[#D2FF28] text-[#12141D] text-[15px] font-semibold px-8 py-3 rounded-full hover:opacity-90 transition-opacity">
+          Book a meeting
+        </a>
+      </div>
+      <!-- Hero image slider -->
+      <div
+        class="relative z-20 w-[88%] mx-auto mt-10 lg:mt-12 mb-10 lg:mb-14 rounded-2xl outline-[10px] outline-[#393B51] overflow-hidden"
+        aria-label="Hero image slider">
+        <div id="hero-slider-track" class="flex transition-transform duration-500 ease-in-out">
+          <div class="min-w-full shrink-0">
+            <img src="/images/hero_slider_1.png" alt="Slide 1"
+              class="w-full h-48 sm:h-56 md:h-[450px] lg:h-[500px] object-cover" />
+          </div>
+          <div class="min-w-full shrink-0">
+            <img src="/images/hero_slider_2.jpg" alt="Slide 2"
+              class="w-full h-48 sm:h-56 md:h-[450px] lg:h-[500px] object-cover" />
+          </div>
+          <div class="min-w-full shrink-0">
+            <img src="/images/hero_slider_3.png" alt="Slide 3"
+              class="w-full h-48 sm:h-56 md:h-[450px] lg:h-[500px] object-cover" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Vertical CTA — large screens only -->
+    <a href="#" aria-label="Schedule a Call Now"
+      class="hidden lg:flex absolute lg:mt-[48px] right-0 top-0 z-20 h-[40px] w-45 mt-[15px] py-[15px] bg-white hover:bg-[#D2FF28] rounded-full transition-colors duration-300 items-center justify-center group mr-[20px]">
+      <span
+        class="flex flex-col items-center justify-center text-[14px] font-semibold leading-[21px] text-[#12141D] select-none">
+        Schedule a Call Now
+    </a>
+  </div>
+  <!-- About Section -->
+  <div
+    class="h-auto w-[90%] md:w-[95%] border-b border-black flex flex-col justify-self-center items-center md:flex-row md:justify-between md:items-start">
+    <div
+      class="w-full h-75 mt-[60px] flex flex-col gap-4 items-start md:h-100 md:ml-[20px] md:w-[46%] lg:h-137.5 lg:w-[45%] lg:mt-25">
+      <h1
+        class="text-[#110b11] font-['Urbanist'] text-[27px] font-semibold leading-[33px] lg:text-[44px] lg:leading-[53px] md:text-[33px] md:leading-[39px]">
+        Unforgettable, Websites, Brands & Visuals for Bold Visionaries.
+      </h1>
+      <p
+        class="font-['Poppins, sans-serif'] text-[#393b51] text-[16px] font-normal leading-[25px] md:text-[17px] md:leading-[27px] lg:text-[18px] lg:leading-[29px]">
+        We’re not your typical design agency. Founded in 2014, we’re a
+        collective of designers, developers, and strategists who believe great
+        digital experiences should be beautiful, functional, and
+        human-centered. From startups to global brands, we help ambitious
+        businesses stand out.
+      </p>
+      <button
+        class="md:w-45 md:py-[17px] mt-[10px] rounded-[25px] bg-transparent border border-[#393b51] text-[13px] font-medium leading-[19px] text-[#110b11] hover:bg-[#B0E600] hover:border-none duration-700 ease-in-out p-[15px]">
+        Know More About Us
+      </button>
+    </div>
+    <img src="/images/home_about1.jpg"
+      class="w-full h-75 rounded-[25px] mt-[30px] mb-[30px] md:w-[48%] lg:mt-25 lg:h-85" alt="not found" />
+  </div>
+  <!-- Ratings -->
+  <div
+    class="w-[90%] h-75 flex justify-self-center flex-col items-start justify-center-safe mt-[10px] md:flex-row md:h-50 md:items-center lg:mt-[20px]">
+    <!-- First Rating Box -->
+    <div class="w-full h-25 flex justify-start items-center gap-4 md:h-30">
+      <div
+        class="w-17.5 h-17.5 rounded-full bg-[#F3F3F3] flex items-center justify-center md:w-20 md:h-20 lg:w-22.5 lg:h-22.5">
+        <i class="fa-solid fa-crosshairs text-[20px] md:text-[25px] lg:text-[35px]"></i>
+      </div>
+      <div class="h-full w-50 flex flex-col justify-center gap-3 md:w-auto lg:w-50">
+        <h1
+          class="text-[#110b11] font-['Urbanist'] text-[27px] font-semibold leading-[33px] lg:text-[44px] lg:leading-[53px] md:text-[33px] md:leading-[39px]">
+          72
+        </h1>
+        <p
+          class="font-['Poppins, sans-serif'] text-[#393b51] text-[15px] font-normal leading-[25px] lg:text-[16px] lg:font-normal lg:leading-[27px]">
+          Hour Prototype Guarantee
+        </p>
+      </div>
+    </div>
+    <!-- Second Rating Box -->
+    <div class="w-full h-25 flex justify-start items-center gap-4 md:h-30">
+      <div
+        class="w-17.5 h-17.5 rounded-full bg-[#F3F3F3] flex items-center justify-center md:w-20 md:h-20 lg:w-22.5 lg:h-22.5">
+        <i class="fa-solid fa-fire-flame-curved text-[20px] md:text-[25px] lg:text-[35px]"></i>
+      </div>
+      <div class="h-full w-50 flex flex-col justify-center gap-3 md:w-auto lg:w-50">
+        <h1
+          class="text-[#110b11] font-['Urbanist'] text-[27px] font-semibold leading-[33px] lg:text-[44px] lg:leading-[53px] md:text-[33px] md:leading-[39px] lg:mt-[-20px]">
+          100+
+        </h1>
+        <p
+          class="font-['Poppins, sans-serif'] text-[#393b51] text-[15px] font-normal leading-[25px] lg:text-[16px] lg:font-normal lg:leading-[27px]">
+          Brands Transformed
+        </p>
+      </div>
+    </div>
+    <!-- Third Rating Box -->
+    <div class="w-full h-25 flex justify-start items-center gap-4 md:h-30">
+      <div
+        class="w-17.5 h-17.5 rounded-full bg-[#F3F3F3] flex items-center justify-center md:w-20 md:h-20 lg:w-22.5 lg:h-22.5">
+        <i class="fa-solid fa-lightbulb text-[20px] md:text-[25px] lg:text-[35px]"></i>
+      </div>
+      <div class="h-full w-50 flex flex-col justify-center gap-3 md:w-auto lg:w-50">
+        <h1
+          class="text-[#110b11] font-['Urbanist'] text-[27px] font-semibold leading-[33px] lg:text-[44px] lg:leading-[53px] md:text-[33px] md:leading-[39px]">
+          10+
+        </h1>
+        <p
+          class="font-['Poppins, sans-serif'] text-[#393b51] text-[15px] font-normal leading-[25px] lg:text-[16px] lg:font-normal lg:leading-[27px]">
+          Years of Pixel-Perfect Craft
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- -------Services------ -->
+  <h1
+    class="text-center bg-[#F3F3F3] p-[60px] text-[#110b11] font-['Urbanist'] text-[27px] font-semibold leading-[33px] lg:text-[44px] lg:leading-[53px] md:text-[33px] md:leading-[39px]">
+    Services We Offer</h1>
+  <div
+    class="w-full h-auto items-center flex flex-col gap-3 bg-[#F3F3F3] pb-15 md:flex-row md:flex-wrap md:justify-center md:items-start md:gap-0">
+    <!-- ----------Service card 1----------- -->
+    <div
+      class="group relative w-[90%] h-65 bg-white rounded-4xl overflow-hidden flex flex-col justify-center items-start p-6 md:w-[46%] md:h-75 md:mt-[40px] md:mr-[20px] lg:h-90 lg:w-[45%] md:order-1 lg:p-15">
+      <!-- Background image layer (hidden by default, shown on hover) -->
+      <img src="images/hero_bg_.png" alt=""
+        class="absolute top-0 left-0 w-full h-full brightness-70 opacity-10 object-cover object-top z-0 pointer-events-none hidden group-hover:block" />
+      <!-- Content -->
+      <div class="relative z-20 flex flex-col gap-4">
+        <h1
+          class="text-[#110b11] font-['Urbanist'] text-[24px] font-semibold leading-[38px] lg:text-[30px] lg:leading-[36px] md:text-[33px] md:leading-[39px]">
+          1.UI/UX Design
+        </h1>
+        <p
+          class="text-[#393b51] font-['Poppins, sans-serif'] text-[#393b51] text-[15px] font-normal leading-[25px] lg:text-[16px] lg:font-normal lg:leading-[27px]">
+          Interfaces that delight users and drive conversions. We design with outcomes in mind.
+        </p>
+        <div class="w-full h-auto flex gap-4 items-start">
+          <i class="fa-solid fa-circle-check text-[22px] mt-[3px]"></i>
+          <p
+            class=" text-[#393b51] font-['Poppins, sans-serif'] text-[#393b51] text-[15px] font-normal leading-[25px] lg:text-[16px] lg:font-normal lg:leading-[27px]">
+            User flows that boost engagement.</p>
+        </div>
+        <div class="w-full h-auto flex gap-4 items-start my-[-5px]">
+          <i class="fa-solid fa-circle-check text-[22px] mt-[3px]"></i>
+          <p
+            class=" text-[#393b51] font-['Poppins, sans-serif'] text-[#393b51] text-[15px] font-normal leading-[25px] lg:text-[16px] lg:font-normal lg:leading-[27px]">
+            Mobile-first, award-worthy interfaces.</p>
+        </div>
+        <div class="w-full h-auto flex gap-4 items-start">
+          <i class="fa-solid fa-circle-check text-[22px] mt-[3px]"></i>
+          <p
+            class=" text-[#393b51] font-['Poppins, sans-serif'] text-[#393b51] text-[15px] font-normal leading-[25px] lg:text-[16px] lg:font-normal lg:leading-[27px]">
+            Prototypes in 72 hours or less.</p>
+        </div>
+      </div>
+    </div>
+    <!-- ----------Service card 2----------- -->
+    <div
+      class="group relative w-[90%] h-65 bg-white rounded-4xl overflow-hidden flex flex-col justify-center items-start p-6 md:w-[45%] md:mt-[20px] md:mr-[20px] md:h-85 lg:w-[45%] lg:h-100 md:order-3 lg:ml-[-10px] lg:p-15">
+      <!-- Background image layer (hidden by default, shown on hover) -->
+      <img src="images/hero_bg_.png" alt=""
+        class="absolute top-0 left-0 w-full h-full brightness-70 opacity-10 object-cover object-top z-0 pointer-events-none hidden group-hover:block" />
+      <!-- Content -->
+      <div class="relative z-20 flex flex-col gap-4">
+        <h1
+          class="text-[#110b11] font-['Urbanist'] text-[24px] font-semibold leading-[38px] lg:text-[30px] lg:leading-[36px] md:text-[33px] md:leading-[39px]">
+          3.Webflow Development
+        </h1>
+        <p
+          class="text-[#393b51] font-['Poppins, sans-serif'] text-[#393b51] text-[15px] font-normal leading-[25px] lg:text-[16px] lg:font-normal lg:leading-[27px]">
+          Websites that load fast, rank higher, and grow with you. No bloated code—just seamless Webflow experiences.
+        </p>
+        <div class="w-full h-auto flex gap-4 items-start">
+          <i class="fa-solid fa-circle-check text-[22px] mt-[3px]"></i>
+          <p
+            class=" text-[#393b51] font-['Poppins, sans-serif'] text-[#393b51] text-[15px] font-normal leading-[25px] lg:text-[16px] lg:font-normal lg:leading-[27px]">
+            90+ PageSpeed scores guaranteed.</p>
+        </div>
+        <div class="w-full h-auto flex gap-4 items-start my-[-5px]">
+          <i class="fa-solid fa-circle-check text-[22px] mt-[3px]"></i>
+          <p
+            class=" text-[#393b51] font-['Poppins, sans-serif'] text-[#393b51] text-[15px] font-normal leading-[25px] lg:text-[16px] lg:font-normal lg:leading-[27px]">
+            SEO-optimized out of the box.</p>
+        </div>
+        <div class="w-full h-auto flex gap-4 items-start">
+          <i class="fa-solid fa-circle-check text-[22px] mt-[3px]"></i>
+          <p
+            class=" text-[#393b51] font-['Poppins, sans-serif'] text-[#393b51] text-[15px] font-normal leading-[25px] lg:text-[16px] lg:font-normal lg:leading-[27px]">
+            Editable CMS for non-tech teams.</p>
+        </div>
+      </div>
+    </div>
+    <!-- ----------Service card 3----------- -->
+    <div
+      class="group relative w-[90%] h-65 bg-white rounded-4xl overflow-hidden flex flex-col justify-center items-start p-6 md:mt-[20px] lg:h-95 md:w-[47%] md:h-80 lg:mt-[20px] md:order-2 lg:p-15">
+      <!-- Background image layer (hidden by default, shown on hover) -->
+      <img src="images/hero_bg_.png" alt=""
+        class="absolute top-0 left-0 w-full h-full brightness-70 opacity-10 object-cover object-top z-0 pointer-events-none hidden group-hover:block" />
+      <!-- Content -->
+      <div class="relative z-20 flex flex-col gap-4">
+        <h1
+          class="text-[#110b11] font-['Urbanist'] text-[24px] font-semibold leading-[38px] lg:text-[30px] lg:leading-[36px] md:text-[33px] md:leading-[39px]">
+          2.Brand Design
+        </h1>
+        <p
+          class="text-[#393b51] font-['Poppins, sans-serif'] text-[#393b51] text-[15px] font-normal leading-[25px] lg:text-[16px] lg:font-normal lg:leading-[27px]">
+          Visual identities that command attention and build trust. Logos, style guides, and assets crafted to tell your
+          story.
+        </p>
+        <div class="w-full h-auto flex gap-4 items-start">
+          <i class="fa-solid fa-circle-check text-[22px] mt-[3px]"></i>
+          <p
+            class=" text-[#393b51] font-['Poppins, sans-serif'] text-[#393b51] text-[15px] font-normal leading-[25px] lg:text-[16px] lg:font-normal lg:leading-[27px]">
+            Logos with hidden storytelling.</p>
+        </div>
+        <div class="w-full h-auto flex gap-4 items-start my-[-5px]">
+          <i class="fa-solid fa-circle-check text-[22px] mt-[3px]"></i>
+          <p
+            class=" text-[#393b51] font-['Poppins, sans-serif'] text-[#393b51] text-[15px] font-normal leading-[25px] lg:text-[16px] lg:font-normal lg:leading-[27px]">
+            Visual identities built to scale.</p>
+        </div>
+        <div class="w-full h-auto flex gap-4 items-start">
+          <i class="fa-solid fa-circle-check text-[22px] mt-[3px]"></i>
+          <p
+            class=" text-[#393b51] font-['Poppins, sans-serif'] text-[#393b51] text-[15px] font-normal leading-[25px] lg:text-[16px] lg:font-normal lg:leading-[27px]">
+            Style guides even your interns can use.</p>
+        </div>
+      </div>
+    </div>
+    <!-- ----------Service card 4----------- -->
+    <div
+      class="group relative w-[90%] h-65 bg-white rounded-4xl overflow-hidden flex flex-col justify-center items-start p-6 md:w-[47%] md:mt-[20px] md:h-75 lg:h-100 lg:w-[46%] lg:mt-[20px] md:order-4 lg:p-15">
+      <!-- Background image layer (hidden by default, shown on hover) -->
+      <img src="images/hero_bg_.png" alt=""
+        class="absolute top-0 left-0 w-full h-full brightness-70 opacity-10 object-cover object-top z-0 pointer-events-none hidden group-hover:block" />
+      <!-- Content -->
+      <div class="relative z-20 flex flex-col gap-4">
+        <h1
+          class="text-[#110b11] font-['Urbanist'] text-[24px] font-semibold leading-[38px] lg:text-[30px] lg:leading-[36px] md:text-[33px] md:leading-[39px]">
+          4.No Code Development
+        </h1>
+        <p
+          class="text-[#393b51] font-['Poppins, sans-serif'] text-[#393b51] text-[15px] font-normal leading-[25px] lg:text-[16px] lg:font-normal lg:leading-[27px]">
+          Launch functional MVPs without engineering headaches. Solutions in weeks, not months.
+        </p>
+        <div class="w-full h-auto flex gap-4 items-start">
+          <i class="fa-solid fa-circle-check text-[22px] mt-[3px]"></i>
+          <p
+            class=" text-[#393b51] font-['Poppins, sans-serif'] text-[#393b51] text-[15px] font-normal leading-[25px] lg:text-[16px] lg:font-normal lg:leading-[27px]">
+            Bubble/FlutterFlow MVPs in 4 weeks.</p>
+        </div>
+        <div class="w-full h-auto flex gap-4 items-start my-[-5px]">
+          <i class="fa-solid fa-circle-check text-[22px] mt-[3px]"></i>
+          <p
+            class=" text-[#393b51] font-['Poppins, sans-serif'] text-[#393b51] text-[15px] font-normal leading-[25px] lg:text-[16px] lg:font-normal lg:leading-[27px]">
+            Complex workflows without engineers.</p>
+        </div>
+        <div class="w-full h-auto flex gap-4 items-start">
+          <i class="fa-solid fa-circle-check text-[22px] mt-[3px]"></i>
+          <p
+            class=" text-[#393b51] font-['Poppins, sans-serif'] text-[#393b51] text-[15px] font-normal leading-[25px] lg:text-[16px] lg:font-normal lg:leading-[27px]">
+            API integrations that actually work.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ------Showcase selected work------- -->
+  <div class="w-full h-auto bg-black flex flex-col items-center">
+    <h1
+      class="text-white font-['Urbanist'] text-[33px] font-semibold leading-[39px] text-center p-15 md:text-[44px] md:leading-[53px]">
+      Showcase of Selected Work</h1>
+    <div class="h-auto w-[90%] flex flex-col md:w-[95%] md:flex-row md:flex-wrap md:justify-between">
+      <!-- Card 1 for showcase -->
+      <div class="w-full h-150 flex flex-col gap-3 md:w-[47%] md:h-140 lg:h-160">
+        <img src="/images/home_showcase_image1.jpg" alt="not found" class="w-full h-[80%] rounded-[25px]">
+        <div class="w-full h-[20%] flex flex-col gap-3">
+          <h1
+            class="text-white font-['Urbanist'] text-[22px] font-semibold leading-[26px] md:text-[26px] md:leading-[31px]">
+            FinTech Startup -Stealth Mode</h1>
+          <div class="w-full h-auto flex justify-start gap-3">
+            <p
+              class="text-white font-['Poppins, sans-serif'] text-[15px] font-normal leading-[15px] p-1.5 border border-white rounded-4xl md:text-[16px] md:leading-[16px]">
+              Simplified IA</p>
+            <p
+              class="text-white font-['Poppins, sans-serif'] text-[15px] font-normal leading-[15px] p-1.5 border border-white rounded-4xl md:text-[16px] md:leading-[16px]">
+              Data Visualization</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 for showcase -->
+      <div class="w-full h-150  flex flex-col gap-3 md:w-[47%] md:order-3 md:h-140 md:mt-[-80px] lg:h-160">
+        <img src="/images/home_showcase_image2.jpg" alt="not found" class="w-full h-[80%] rounded-[25px]">
+        <div class="w-full h-[20%] flex flex-col gap-3">
+          <h1
+            class="text-white font-['Urbanist'] text-[22px] font-semibold leading-[26px] md:text-[26px] md:leading-[31px]">
+            LawLex - Webflow Website</h1>
+          <div class="w-full h-auto flex justify-start gap-3">
+            <p
+              class="text-white font-['Poppins, sans-serif'] text-[15px] font-normal leading-[15px] p-1.5 border border-white rounded-4xl md:text-[16px] md:leading-[16px]">
+              CMS</p>
+            <p
+              class="text-white font-['Poppins, sans-serif'] text-[15px] font-normal leading-[15px] p-1.5 border border-white rounded-4xl md:text-[16px] md:leading-[16px]">
+              Dynamic Filtering</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 for showcase -->
+      <div class="w-full h-150 flex flex-col gap-3 md:order-2 md:w-[47%] md:h-140 md:mt-20 lg:h-160">
+        <img src="/images/home_showcase_image3.jpg" alt="not found" class="w-full h-[80%] rounded-[25px]">
+        <div class="w-full h-[20%] flex flex-col gap-3">
+          <h1
+            class="text-white font-['Urbanist'] text-[22px] font-semibold leading-[26px] md:text-[26px] md:leading-[31px]">
+            Greenify - Social Engagement</h1>
+          <div class="w-full h-auto flex justify-start gap-3">
+            <p
+              class="text-white font-['Poppins, sans-serif'] text-[15px] font-normal leading-[15px] p-1.5 border border-white rounded-4xl md:text-[16px] md:leading-[16px]">
+              Animation</p>
+            <p
+              class="text-white font-['Poppins, sans-serif'] text-[15px] font-normal leading-[15px] p-1.5 border border-white rounded-4xl md:text-[16px] md:leading-[16px]">
+              Bold Color Palette</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 for showcase -->
+      <div class="w-full h-150  flex flex-col gap-3 md:order-4 md:w-[47%] md:h-140 lg:h-160">
+        <img src="/images/home_showcase_image4.jpg" alt="not found" class="w-full h-[80%] rounded-[25px]">
+        <div class="w-full h-[20%] flex flex-col gap-3">
+          <h1
+            class="text-white font-['Urbanist'] text-[22px] font-semibold leading-[26px] md:text-[26px] md:leading-[31px]">
+            Quizora - No-Code MVP for EdTech</h1>
+          <div class="w-full h-auto flex justify-start gap-3">
+            <p
+              class="text-white font-['Poppins, sans-serif'] text-[15px] font-normal leading-[15px] p-1.5 border border-white rounded-4xl md:text-[16px] md:leading-[16px]">
+              Gamified</p>
+            <p
+              class="text-white font-['Poppins, sans-serif'] text-[15px] font-normal leading-[15px] p-1.5 border border-white rounded-4xl md:text-[16px] md:leading-[16px]">
+              Stripe Subscription</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="my-[30px] mt-[-10px] self-center bg-transparent text-white font-['Poppins, sans-serif'] text-[13px] font-medium leading-[19px] py-3 border px-6 border-white rounded-4xl hover:bg-[#B0E600] hover:text-black duration-400 hover:cursor-pointer md:text-[14px] md:leading-[21px] md:mb-[60px] md:px-7 lg:mt-[40px]">View
+      All Case Studies</button>
+  </div>
+  <!-- Reviews Section -->
+  <!-- Heading -->
+  <h2 class="text-center font-['Urbanist'] text-[33px] leading-[39px] font-semibold my-[40px]">
+    What Clients Say About Us
+  </h2>
+  <div class="w-full flex flex-col items-center lg:flex-row lg:justify-between lg:w-[93%] lg:justify-self-center">
+    <!-- Card 1 -->
+    <div
+      class="w-[90%] h-65 border border-[#F3F3F3] bg-[#F3F3F3] rounded-2xl mb-6 flex flex-col justify-center items-center gap-2 lg:w-[32%] lg:gap-4 lg:justify-start lg:pt-10 lg:h-140">
+
+      <!-- Heading -->
+      <h3
+        class="font-['Urbanist'] text-[33px] md:text-[33px] lg:text-[44px] leading-[39px] md:leading-[39px] lg:leading-[53px] font-semibold text-[#110b11]">
+        4.9
+      </h3>
+
+      <!-- Five Stars -->
+      <div class="flex gap-1 text-[14px] md:text-[16px] lg:text-[18px] text-[#F5A623]">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+
+      <!-- Paragraph 1 -->
+      <p
+        class="font-['Poppins, sans-serif'] text-[15px] md:text-[16px] leading-[25px] md:leading-[27px] font-normal text-[#393b51]">
+        (50+ Reviews)
+      </p>
+
+      <!-- Paragraph 2 -->
+      <p
+        class="font-['Urbanist'] text-[18px] md:text-[22px] leading-[26px] md:leading-[31px] font-semibold text-[#110b11] lg:px-[60px] lg:text-center lg:my-3">
+        Where Ideas Meet Extraordinary Design
+      </p>
+
+      <!-- Image -->
+      <img src="/images/clutch_image1.svg" alt="Client Logo" class="h-10 mt-[20px] md:h-8 lg:h-8 w-auto" />
+    </div>
+
+    <!-- Card 2 -->
+    <div
+      class="w-[90%] h-90 bg-white border border-[#E6E6E6] rounded-2xl mb-6 flex flex-col justify-between items-center md:h-70 lg:w-[32%] lg:h-140">
+      <!-- Upper part - 65% -->
+      <div class="w-full h-[65%] bg-white flex flex-col items-start pt-[20px] pl-[20px] gap-[10px]">
+
+        <!-- Rating + Stars -->
+        <div class="flex items-center gap-2 lg:py-10 lg:px-4">
+          <span
+            class="font-['Urbanist'] text-[22px] md:text-[26px] leading-[26px] md:leading-[31px] font-semibold text-[#110b11]">
+            4.7
+          </span>
+          <div class="flex gap-1 text-[13px] md:text-[16px] lg:text-[16px] text-[#F5A623]">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+
+        <!-- Paragraph -->
+        <p
+          class="font-['Poppins, sans-serif'] text-[15px] md:text-[16px] leading-[25px] md:leading-[27px]  font-normal text-[#393b51] pr-[20px] lg:px-5 lg:pr-8 lg:text-[17px]">
+          “We struggled with user drop-offs for months. Web Rocket redesigned our dashboard with intuitive workflows,
+          and our retention skyrocketed by 40% in 30 days. Their team actually listens to users—no ego, just data-driven
+          design.”
+        </p>
+
+      </div>
+
+      <!-- Lower part - 35% -->
+      <div
+        class="w-full h-[35%] md:h-[25%] lg:h-[20%] rounded-b-2xl bg-[#F3F3F3] flex flex-col md:flex-row lg:flex-row md:justify-start md:px-8 items-center justify-center gap-2 md:gap-4 lg:gap-4 ">
+
+        <!-- Picture -->
+        <img src="/images/home_slient1.png" alt="Client"
+          class="h-13 w-13 md:h-14 md:w-14 lg:h-16 lg:w-16 rounded-full object-cover" />
+
+        <!-- Name + Text (stacked column, sits beside pic on md/lg) -->
+        <div class="flex flex-col items-center md:items-start lg:items-start gap-1">
+          <span
+            class="font-['Urbanist'] text-[16px] md:text-[20px] leading-[20px] md:leading-[24px] font-semibold text-[#110b11]">
+            Sarah K.
+          </span>
+          <span
+            class="font-['Poppins, sans-serif'] text-[15px] md:text-[16px] leading-[25px] md:leading-[27px] font-normal text-[#393b51]">
+            CEO of SaaSFlow
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div
+      class="w-[90%] h-90 bg-white border border-[#E6E6E6] rounded-2xl mb-6 flex flex-col justify-between items-center md:h-70 lg:w-[32%] lg:h-140">
+      <!-- Upper part - 65% -->
+      <div class="w-full h-[65%] bg-white flex flex-col items-start pt-[20px] pl-[20px] gap-[10px]">
+
+        <!-- Rating + Stars -->
+        <div class="flex items-center gap-2 lg:py-10 lg:px-4">
+          <span
+            class="font-['Urbanist'] text-[22px] md:text-[26px] leading-[26px] md:leading-[31px] font-semibold text-[#110b11]">
+            4.9
+          </span>
+          <div class="flex gap-1 text-[13px] md:text-[16px] lg:text-[16px] text-[#F5A623]">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+
+        <!-- Paragraph -->
+        <p
+          class="font-['Poppins, sans-serif'] text-[15px] md:text-[16px] leading-[25px] md:leading-[27px]  font-normal text-[#393b51] pr-[20px] lg:px-5 lg:pr-8 lg:text-[17px]">
+          “Our old branding looked like every other brewery. Web Rocket gave us a bold, hoppy-inspired identity that’s
+          now on merch, trucks, and even trade shows. Sales jumped 65% post-rebrand—worth every penny.
+        </p>
+
+      </div>
+
+      <!-- Lower part - 35% -->
+      <div
+        class="w-full h-[35%] md:h-[25%] lg:h-[20%] rounded-b-2xl bg-[#F3F3F3] flex flex-col md:flex-row lg:flex-row md:justify-start md:px-8 items-center justify-center gap-2 md:gap-4 lg:gap-4 ">
+
+        <!-- Picture -->
+        <img src="/images/home_slient2.png" alt="Client"
+          class="h-13 w-13 md:h-14 md:w-14 lg:h-16 lg:w-16 rounded-full object-cover" />
+
+        <!-- Name + Text (stacked column, sits beside pic on md/lg) -->
+        <div class="flex flex-col items-center md:items-start lg:items-start gap-1">
+          <span
+            class="font-['Urbanist'] text-[16px] md:text-[20px] leading-[20px] md:leading-[24px] font-semibold text-[#110b11]">
+            David R.
+          </span>
+          <span
+            class="font-['Poppins, sans-serif'] text-[15px] md:text-[16px] leading-[25px] md:leading-[27px] font-normal text-[#393b51]">
+            Founder of BrewCraft
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Studio Journal Section -->
+  <div class="w-full bg-white py-20">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Heading -->
+      <h2 class="text-center text-4xl md:text-5xl font-semibold text-gray-900 mb-16">
+        The Studio Journal
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Article Card 1 -->
+        <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+          <div class="overflow-hidden">
+            <img src="/images/index_studion_image1.jpg" alt=""
+              class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="p-8">
+            <span class="inline-block px-5 py-2 bg-gray-100 text-sm font-medium rounded-full mb-4">UI/UX Design</span>
+
+            <h3 class="text-xl font-semibold leading-tight mb-6 line-clamp-3">
+              How We Boosted Client Conversions 200% With Smarter UI/UX
+            </h3>
+
+            <div class="flex items-center gap-4 text-sm text-gray-500">
+              <div class="flex items-center gap-1.5">
+                <i class="fa-solid fa-user"></i>
+                <span>kalpeshb</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <i class="fa-solid fa-calendar"></i>
+                <span>April 23, 2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article Card 2 -->
+        <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+          <div class="overflow-hidden">
+            <img src="/images/index_studion_image2.jpg" alt=""
+              class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="p-8">
+            <span class="inline-block px-5 py-2 bg-gray-100 text-sm font-medium rounded-full mb-4">Branding</span>
+
+            <h3 class="text-xl font-semibold leading-tight mb-6 line-clamp-3">
+              Why Your Logo Colors Are Driving Away Your Ideal Customers
+            </h3>
+
+            <div class="flex items-center gap-4 text-sm text-gray-500">
+              <div class="flex items-center gap-1.5">
+                <i class="fa-solid fa-user"></i>
+                <span>kalpeshb</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <i class="fa-solid fa-calendar"></i>
+                <span>April 23, 2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article Card 3 -->
+        <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+          <div class="overflow-hidden">
+            <img src="/images/index_studion_image3.jpg" alt=""
+              class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="p-8">
+            <span class="inline-block px-5 py-2 bg-gray-100 text-sm font-medium rounded-full mb-4">Web
+              Development</span>
+
+            <h3 class="text-xl font-semibold leading-tight mb-6 line-clamp-3">
+              WordPress vs Webflow – Our Developers Settle The Debate
+            </h3>
+
+            <div class="flex items-center gap-4 text-sm text-gray-500">
+              <div class="flex items-center gap-1.5">
+                <i class="fa-solid fa-user"></i>
+                <span>kalpeshb</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <i class="fa-solid fa-calendar"></i>
+                <span>April 23, 2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Meet The Team / hero footer -->
+  <div
+    class="w-full bg-[#12141D] relative h-120 md:h-130 lg:h-screen flex flex-col gap-5 justify-center items-center overflow-hidden">
+
+    <!-- Background W Shape -->
+    <div
+      class="absolute inset-0 bg-[url('images/hero_bg_.png')] brightness-40 opacity-10 object-cover object-top object-left bg-cover bg-center  pointer-events-none">
+    </div>
+
+
+    <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+
+      <!-- Profile Image -->
+      <div class="w-20 h-20 mx-auto mb-8 rounded-full overflow-hidden shadow-2xl">
+        <img src="/images/index_boy_wearing_glasses1.png" alt="Lead Designer" class="w-full h-full object-cover">
+      </div>
+
+      <!-- Heading -->
+      <h2
+        class="text-3xl md:text-4xl font-semibold md:text-[44px] md:leading-[53px] font-['Urbanist'] text-white leading-tight mb-4">
+        Meet the Minds Behind the Magic
+      </h2>
+
+      <p class="text-white text-[15px] leading-[25px] md:text-[17px] md:leading-[27px] max-w-md mx-auto mb-10 ">
+        Get a free 30-minute strategy session with our lead designer.
+      </p>
+
+      <!-- CTA Button -->
+      <a href="#"
+        class="inline-block bg-[#D2FF28] hover:bg-[#B0E600] text-[#12141D] font-semibold text-md px-10 py-3 rounded-full transition-all  mb-10">
+        Book a Free Call
+      </a>
+
+      <!-- Email Option -->
+      <div class="">
+        <p class="text-white text-sm mb-1">Prefer Email?</p>
+        <a href="mailto:chris@webrocket.studio"
+          class="text-white hover:text-[#D2FF28] underline underline-offset-4 transition-colors">
+          <strong>chris@webrocket.studio</strong>
+        </a>
+      </div>
+
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-white pt-16 pb-10 border-t relative">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-10">
+
+        <!-- Column 1: Logo + Description -->
+        <div class="lg:col-span-4 ">
+          <div class="flex items-center gap-2 mb-2">
+            <!-- <span class="text-3xl font-bold text-[#D2FF28]">W</span> -->
+            <span><img src="images/footer-logo1.svg" alt="image is not found"></span>
+            <!-- <span class="text-2xl font-semibold tracking-tight">EB ROCKET</span> -->
+          </div>
+          <p class="text-gray-700 max-w-xs">
+            We craft high-performance digital <br> experiences that drive real <br> business results.
+          </p>
+
+          <!-- Social Icons -->
+          <div class="flex gap-4 mt-8">
+            <a href="#"
+              class="w-9 h-9 bg-gray-900 text-[#D5FE3C]   rounded-full flex items-center justify-center transition-all   hover:scale-125  duration-300">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#"
+              class="w-9 h-9 bg-gray-900 text-[#D5FE3C] rounded-full flex items-center justify-center    hover:scale-125  duration-300 transition-all">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#"
+              class="w-9 h-9 bg-gray-900 text-[#D5FE3C] rounded-full flex items-center justify-center  transition-all     hover:scale-125 duration-300">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="#"
+              class="w-9 h-9 bg-gray-900 text-[#D5FE3C] rounded-full flex items-center justify-center    hover:scale-125 transition-all duration-300">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="lg:col-span-2">
+          <h4 class="font-semibold text-lg mb-5">Quick Links</h4>
+          <ul class="space-y-3 text-gray-600">
+            <li><a href="/index.html" class="hover:text-black transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-black transition-colors">About</a></li>
+            <li><a href="blogs.html" class="hover:text-black transition-colors">Blog</a></li>
+            <li><a href="portfolio.html" class="hover:text-black transition-colors">Portfolio</a></li>
+            <li><a href="contact.html" class="hover:text-black transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Services -->
+        <div class="lg:col-span-3">
+          <h4 class="font-semibold text-lg mb-5">Services</h4>
+          <ul class="space-y-3 text-gray-600">
+            <li><a href="services.html" class="hover:text-black transition-colors">UI/UX Design</a></li>
+            <li><a href="#" class="hover:text-black transition-colors">Brand Design</a></li>
+            <li><a href="#" class="hover:text-black transition-colors">Webflow Development</a></li>
+            <li><a href="#" class="hover:text-black transition-colors">No-Code Development</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Column -->
+        <div class="lg:col-span-3">
+          <h4 class="font-semibold text-lg mb-5">Get the Latest Inspiration</h4>
+
+          <form id="newsletter-form" class="space-y-4">
+            <div>
+              <input type="email" id="email-input" placeholder="Enter your email *"
+                class="w-full px-5 py-2 border border-gray-300 rounded-[10px] focus:outline-none focus:border-black focus:ring-4 focus:ring-black/10 transition-all">
+              <p id="error-message" class="text-red-600 text-sm mt-1 hidden">This field is required.</p>
+            </div>
+
+            <button type="submit"
+              class="w-full bg-black py-2  rounded-[10px] font-normal text-white  hover:bg-[#282A32]   transition-all mt-4 hover:cursor-pointer">
+              Subscribe Now
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="mt-16 pt-8 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-6">
+          <p class="text-center text-gray-500 text-md">
+            Copyright © 2026 Web Rocket. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Go to Top Button -->
+  <a href="/index.html">
+    <button class="fixed bottom-6 text-white right-6 bg-black px-2 py-1 rounded-[2px] hover:cursor-pointer z-100"><i
+        class="fa-solid fa-angle-up"></i></button>
+  </a>
+
+
+
+
+
+
+  <!-- ------------JavaScript----------- -->
+  <script>
+    const navToggle = document.getElementById("nav-toggle");
+    const mobileNav = document.getElementById("mobile-nav");
+    const navToggleIcon = document.getElementById("nav-toggle-icon");
+
+    navToggle.addEventListener("click", () => {
+      const isOpen = !mobileNav.classList.contains("hidden");
+      mobileNav.classList.toggle("hidden");
+      mobileNav.classList.toggle("flex");
+      navToggle.setAttribute("aria-expanded", String(!isOpen));
+      navToggleIcon.classList.toggle("fa-bars", isOpen);
+      navToggleIcon.classList.toggle("fa-xmark", !isOpen);
+    });
+
+    const heroSliderTrack = document.getElementById("hero-slider-track");
+    const heroSlides = heroSliderTrack.children.length;
+    let heroSlideIndex = 0;
+
+    setInterval(() => {
+      heroSlideIndex = (heroSlideIndex + 1) % heroSlides;
+      heroSliderTrack.style.transform = `translateX(-${heroSlideIndex * 100}%)`;
+    }, 4000);
+  </script>
+</body>
+
+</html>

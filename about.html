@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About-Agency</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg " media="(prefers-color-scheme: dark)" />
+  <link rel="stylesheet" href="output.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Go to Top Button -->
+  <a href="/about.html">
+    <button class="fixed bottom-6 text-white right-6 bg-black px-2 py-1 rounded-[2px] hover:cursor-pointer z-100"><i
+        class="fa-solid fa-angle-up"></i></button>
+  </a>
+  <div class="relative w-full bg-[#12141D] pb-14 sm:pb-20 lg:pb-28">
+    <img id="hero-bg" src="/images/hero_bg_.png" alt=""
+      class="absolute top-0 left-0 w-full h-full brightness-30 opacity-10 object-cover object-top z-0 pointer-events-none lg:h-[600px]" />
+
+    <!-- ---------Header-------- -->
+    <header class="relative z-20 w-[90%] mx-auto grid grid-cols-[1fr_auto_1fr] items-center lg:pt-[48px] lg:mx-[20px]">
+      <a href="/index.html" class="shrink-0 col-start-1 justify-self-start">
+        <img src="/images/logo.svg" alt="Web Rocket logo" class="h-6 w-auto lg:h-8" />
+      </a>
+      <!-- Desktop navigation -->
+      <nav class="hidden lg:flex col-start-2 items-center gap-8 justify-self-center lg:ml-[30px]"
+        aria-label="Main navigation">
+        <a href="/about.html"
+          class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">About</a>
+        <a href="/services.html"
+          class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">Services</a>
+        <a href="/blogs.html" class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">Blog</a>
+        <a href="/portfolio.html"
+          class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">Portfolio</a>
+        <a href="/careers.html"
+          class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">Careers</a>
+        <a href="/get_a_quote.html"
+          class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">Get a Quote</a>
+        <a href="/contact.html"
+          class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">Contact</a>
+      </nav>
+
+      <!-- Mobile toggle button -->
+      <button id="nav-toggle" type="button"
+        class="lg:hidden col-start-3 justify-self-end text-white text-2xl p-2 hover:text-[#D2FF28] transition-colors hover:cursor-pointer"
+        aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+        <i class="fa-solid fa-bars text-[#D2FF28]" id="nav-toggle-icon"></i>
+      </button>
+    </header>
+
+    <!-- Mobile navigation -->
+    <nav id="mobile-nav"
+      class="hidden lg:hidden relative z-100 w-full h-auto mx-auto flex-col border-t border-white/10 pt-4 bg-white"
+      aria-label="Mobile navigation">
+      <a href="/about.html"
+        class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">About</a>
+      <a href="/services.html"
+        class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">Services</a>
+      <a href="/blogs.html"
+        class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">Blogs</a>
+      <a href="/portfolio.html"
+        class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">Portfolio</a>
+      <a href="/careers.html"
+        class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">Careers</a>
+      <a href="/get_a_quote.html"
+        class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">Get
+        a Quote</a>
+      <a href="/contact.html"
+        class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">Contact</a>
+      <button
+        class="hover:cursor-pointer my-6 bg-white h-11 w-full border-0 rounded-4xl font-bold hover:bg-[#8DB706] hover:text-[#12141D] duration-300">
+        Schedule a Call Now
+      </button>
+    </nav>
+
+    <!-- Vertical CTA — large screens only -->
+    <a href="#" aria-label="Schedule a Call Now"
+      class="hidden lg:flex lg:mt-10 absolute right-0 top-0 z-20 h-[40px] w-45 mt-[15px] py-[15px] bg-white hover:bg-[#D2FF28] rounded-full transition-colors duration-300 items-center justify-center group mr-[20px]">
+      <span
+        class="flex flex-col items-center justify-center text-[14px] font-semibold leading-[21px] text-[#12141D] select-none">Schedule
+        a Call Now</span>
+    </a>
+
+    <!-- Hero content -->
+    <div class="relative z-10 w-[97%] ml-4  mt-10 sm:mt-16 lg:mt-20 text-center ">
+      <h1
+        class="text-start text-white text-[42px] lg:text-[68px] xl:text-6xl font-semibold leading-[50px] lg:leading-[82px]">
+        We Design & Build Digital Experiences That Move the <br />
+        Needle
+      </h1>
+      <!-- Main Grid -->
+      <div class="w-full mt-12 md:mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-0 lg:gap-15">
+        <!-- First Image -->
+        <div class="w-80 h-90 lg:w-80 lg:h-90 rounded-3xl overflow-hidden shadow-2xl  mt-7">
+          <img src="images/about_hero_image1.jpg" alt="Team working" class="w-full h-full object-cover" />
+        </div>
+
+        <!-- Second Image -->
+        <div class="w-90 h-110 lg:h-120 rounded-3xl mx-20 md:mx-0  overflow-hidden shadow-2xl lg:col-span-1 mt-7 ">
+          <img src="images/about_hero_image2.jpg" alt="Creative discussion" class="w-full full object-cover" />
+        </div>
+
+        <!-- Text Content -->
+        <div class="w-full lg:col-span-1 flex flex-col justify-between lg:justify-center ">
+          <div>
+            <p
+              class="text-white mt-6 text-start lg:mt-20 text-[15px] md:text-left md:text-[17.3px] leading-[25px] mb-8 ">
+              We're not your average design shop. We're a strategic creative
+              studio that blends jaw-dropping aesthetics with ruthless
+              functionality. Since 2017, we've helped 100+ startups, agencies,
+              and scale-ups transform their ideas into high-performing
+              websites, apps, and brands that stand out and convert.
+            </p>
+
+            <!-- Play Showreel Button -->
+
+            <a href="#"
+              class="flex items-center justify-center gap-3 px-6 py-3 text-black bg-white border border-white/60 hover:bg-[#B0E600] rounded-full transition-all group w-fit">
+              <span class="font-medium">Play Showreel</span>
+            </a>
+          </div>
+
+          <!-- Star Icon -->
+          <div class="mt-10 flex justify-end items-start md:self-end md:w-full">
+            <i class="fa-solid fa-star-of-life text-[#D2FF28] text-5xl lg:text-6xl"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- HOW WE WORK SECTION  -->
+  <section class="w-full px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+    <!-- Section Heading -->
+    <h2
+      class="text-center text-[26px] sm:text-[32px] md:text-[42px] font-black font-['Urbanist'] text-black leading-tight mb-10 md:mb-16">
+      How We Work: Painless, Proven, Pixel-Perfect
+    </h2>
+
+    <!-- Cards Parent (full width, holds all 3 cards) -->
+    <div class="w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-6 lg:gap-8">
+      <!-- Card 1: Discover -->
+      <div class="border border-gray-200 rounded-3xl p-8 flex flex-col items-center text-center">
+        <!-- Icon -->
+        <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-black flex items-center justify-center mb-6">
+          <i class="fa-solid fa-asterisk text-[#D2FF28] text-2xl md:text-3xl"></i>
+        </div>
+
+        <!-- Title -->
+        <h3 class="text-[22px] md:text-[26px] font-bold font-['Urbanist'] text-black mb-3">
+          Discover
+        </h3>
+
+        <!-- Description -->
+        <p class="text-[#393b51] text-[15px] md:text-[16px] leading-relaxed mb-6">
+          We dive deep into your goals, and "must-haves" to craft a battle
+          plan.
+        </p>
+
+        <!-- Step Badge -->
+        <span class="bg-black text-[#D2FF28] text-md font-semibold px-6 py-1.5 rounded-full">
+          Step 1
+        </span>
+      </div>
+
+      <!-- Card 2: Design & Build -->
+      <div class="border border-gray-200 rounded-3xl p-8 flex flex-col items-center text-center">
+        <!-- Icon -->
+        <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-black flex items-center justify-center mb-6">
+          <i class="fa-solid fa-asterisk text-[#D2FF28] text-2xl md:text-3xl"></i>
+        </div>
+
+        <!-- Title -->
+        <h3 class="text-[22px] md:text-[26px] font-bold font-['Urbanist'] text-black mb-3">
+          Design & Build
+        </h3>
+
+        <!-- Description -->
+        <p class="text-[#393b51] text-[15px] md:text-[16px] leading-relaxed mb-6">
+          You'll see real work fast—with checkpoints to refine every detail.
+        </p>
+
+        <!-- Step Badge -->
+        <span class="bg-black text-[#D2FF28] text-md font-semibold px-6 py-1.5 rounded-full">
+          Step 2
+        </span>
+      </div>
+
+      <!-- Card 3: Launch & Grow -->
+      <div class="border border-gray-200 rounded-3xl p-8 flex flex-col items-center text-center">
+        <!-- Icon -->
+        <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-black flex items-center justify-center mb-6">
+          <i class="fa-solid fa-asterisk text-[#D2FF28] text-2xl md:text-3xl"></i>
+        </div>
+
+        <!-- Title -->
+        <h3 class="text-[22px] md:text-[26px] font-bold font-['Urbanist'] text-black mb-3">
+          Launch & Grow
+        </h3>
+
+        <!-- Description -->
+        <p class="text-gray-500 text-[15px] md:text-[16px] leading-relaxed mb-6">
+          We don't just deliver—we optimize for long-term success.
+        </p>
+
+        <!-- Step Badge -->
+        <span class="bg-black text-[#393b51] text-md font-semibold px-6 py-1.5 rounded-full">
+          Step 3
+        </span>
+      </div>
+    </div>
+  </section>
+  <!-- Awaed sections -->
+  <section class="w-full px-4 sm:px-6 lg:px-8 py-16 md:py-20 bg-[#F2F2F2]">
+    <!-- Section Heading -->
+    <h2
+      class="text-center text-[26px] sm:text-[32px] md:text-[42px] font-black font-['Urbanist'] text-black leading-tight mb-10 md:mb-16">
+      Recognitions & Awards
+    </h2>
+
+    <!-- Content Parent: Image + Awards List -->
+    <div
+      class="w-full max-w-6xl mx-auto flex flex-col md:items-center lg:flex-row gap-8 md:gap-10 lg:gap-16 items-stretch">
+      <!-- Left -->
+      <div class="w-full md:w-[70%] md:h-100 lg:w-[45%] lg:h-125 rounded-3xl overflow-hidden">
+        <img src="images/about_trophy1.jpg" alt="Awards trophy" class="w-full h-full md:h-full object-cover" />
+      </div>
+
+      <!-- Right: Awards List -->
+      <div class="w-full lg:w-[55%] lg:h-125 md:w-[95%] flex flex-col justify-center gap-6 md:gap-7">
+        <!-- Award 1 -->
+        <div class="flex flex-col gap-1 pb-5 md:pb-6 border-b border-gray-300">
+          <div class="flex items-start justify-between gap-3">
+            <h3 class="text-[20px] sm:text-[22px] md:text-[24px] font-bold font-['Urbanist'] text-black">
+              Awwwards FWA
+            </h3>
+            <span class="text-[#393b51] text-[15px] md:text-[16px] shrink-0">2024</span>
+          </div>
+          <p class="text-[#393b51] text-[14px] sm:text-[15px] md:text-[16px]">
+            Site of the Day" for LawLex's innovative Webflow build
+          </p>
+        </div>
+
+        <!-- Award 2 -->
+        <div class="flex flex-col gap-1 pb-5 md:pb-6 border-b border-gray-300">
+          <div class="flex items-start justify-between gap-3">
+            <h3 class="text-[20px] sm:text-[22px] md:text-[24px] font-bold font-['Urbanist'] text-black">
+              CSS Design Awards
+            </h3>
+            <span class="text-[#393b51] text-[15px] md:text-[16px] shrink-0">2024</span>
+          </div>
+          <p class="text-[#393b51] text-[14px] sm:text-[15px] md:text-[16px]">
+            UI Design Excellence
+          </p>
+        </div>
+
+        <!-- Award 3 -->
+        <div class="flex flex-col gap-1 pb-5 md:pb-6 border-b border-gray-300">
+          <div class="flex items-start justify-between gap-3">
+            <h3 class="text-[20px] sm:text-[22px] md:text-[24px] font-bold font-['Urbanist'] text-black">
+              Clutch Top 100
+            </h3>
+            <span class="text-[#393b51] text-[15px] md:text-[16px] shrink-0">2025</span>
+          </div>
+          <p class="text-[#393b51] text-[14px] sm:text-[15px] md:text-[16px]">
+            Ranked among top B2B design studios globally
+          </p>
+        </div>
+
+        <!-- Award 4 -->
+        <div class="flex flex-col gap-1">
+          <div class="flex items-start justify-between gap-3">
+            <h3 class="text-[20px] sm:text-[22px] md:text-[24px] font-bold font-['Urbanist'] text-black">
+              Adobe Design Achievement Awards
+            </h3>
+            <span class="text-[#393b51] text-[15px] md:text-[16px] shrink-0">2025</span>
+          </div>
+          <p class="text-[#393b51] text-[14px] sm:text-[15px] md:text-[16px]">
+            Finalist – Branding Category
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agency story section -->
+  <section class="w-full flex flex-col md:flex-row items-stretch">
+    <!-- Left: -->
+    <div class="w-full md:w-1/2">
+      <img src="/images/about_discussion_smiling1.jpg" alt="Team working together"
+        class="w-full h-screen md:h-full object-cover" />
+    </div>
+
+    <!-- Right: Text -->
+    <div
+      class="w-full h-125 md:w-1/2 flex flex-col justify-center px-6 sm:px-10 md:px-12 lg:px-16 py-10 md:py-16 gap-5 md:gap-6">
+      <!-- Heading -->
+      <h2
+        class="text-[28px] sm:text-[34px] md:text-[40px] lg:text-[44px] font-black font-['Urbanist'] text-black leading-tight">
+        From Garage Dreams to Pixel-Perfect Reality.
+      </h2>
+
+      <p class="text-gray-600 text-[15px] sm:text-[16px] leading-relaxed">
+        We didn't start Web Rocket to follow design trends—we started it to
+        break them up. Back in 2018, our founders - Two Caffeine Fueled Dev &
+        Design hybrids were sick of agencies overpromising and
+        underdelivering. So we built our own damn studio.
+      </p>
+
+      <p class="text-gray-600 text-[15px] sm:text-[16px] leading-relaxed">
+        Today? We're a squad of 15 designers, developers, and no-code wizards
+        who still operate like a startup:
+      </p>
+
+      <!-- Checklist -->
+      <ul class="flex flex-col gap-3 md:gap-4 mt-1">
+        <!-- Item 1 -->
+        <li class="flex items-center gap-3">
+          <span class="w-6 h-6 rounded-full bg-black flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-check text-white text-[10px]"></i>
+          </span>
+          <span class="text-black text-[15px] sm:text-[16px] font-medium">
+            Turning complex problems into intuitive interfaces.
+          </span>
+        </li>
+
+        <!-- Item 2 -->
+        <li class="flex items-center gap-3">
+          <span class="w-6 h-6 rounded-full bg-black flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-check text-white text-[10px]"></i>
+          </span>
+          <span class="text-black text-[15px] sm:text-[16px] font-medium">
+            Building brands that people remember.
+          </span>
+        </li>
+
+        <!-- Item 3 -->
+        <li class="flex items-center gap-3">
+          <span class="w-6 h-6 rounded-full bg-black flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-check text-white text-[10px]"></i>
+          </span>
+          <span class="text-black text-[15px] sm:text-[16px] font-medium">
+            Pushing no-code tools to their absolute limits.
+          </span>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- Team sections starts here  -->
+  <!-- Meet The Team / hero footer -->
+  <div
+    class="w-full bg-[#12141D] relative h-120 md:h-130 lg:h-screen flex flex-col gap-5 justify-center items-center overflow-hidden">
+
+    <!-- Background W Shape -->
+    <div
+      class="absolute inset-0 bg-[url('images/hero_bg_.png')] brightness-40 opacity-10 object-cover object-top object-left bg-cover bg-center  pointer-events-none">
+    </div>
+
+
+    <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+
+      <!-- Profile Image -->
+      <div class="w-20 h-20 mx-auto mb-8 rounded-full overflow-hidden shadow-2xl">
+        <img src="/images/index_boy_wearing_glasses1.png" alt="Lead Designer" class="w-full h-full object-cover">
+      </div>
+
+      <!-- Heading -->
+      <h2
+        class="text-3xl md:text-4xl font-semibold md:text-[44px] md:leading-[53px] font-['Urbanist'] text-white leading-tight mb-4">
+        Meet the Minds Behind the Magic
+      </h2>
+
+      <p class="text-white text-[15px] leading-[25px] md:text-[17px] md:leading-[27px] max-w-md mx-auto mb-10 ">
+        Get a free 30-minute strategy session with our lead designer.
+      </p>
+
+      <!-- CTA Button -->
+      <a href="#"
+        class="inline-block bg-[#D2FF28] hover:bg-[#B0E600] text-[#12141D] font-semibold text-md px-10 py-3 rounded-full transition-all  mb-10">
+        Book a Free Call
+      </a>
+
+      <!-- Email Option -->
+      <div class="">
+        <p class="text-white text-sm mb-1">Prefer Email?</p>
+        <a href="mailto:chris@webrocket.studio"
+          class="text-white hover:text-[#D2FF28] underline underline-offset-4 transition-colors">
+          <strong>chris@webrocket.studio</strong>
+        </a>
+      </div>
+
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-white pt-16 pb-10 border-t relative">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-10">
+
+        <!-- Column 1: Logo + Description -->
+        <div class="lg:col-span-4 ">
+          <div class="flex items-center gap-2 mb-2">
+            <!-- <span class="text-3xl font-bold text-[#D2FF28]">W</span> -->
+            <span><img src="images/footer-logo1.svg" alt="image is not found"></span>
+            <!-- <span class="text-2xl font-semibold tracking-tight">EB ROCKET</span> -->
+          </div>
+          <p class="text-gray-700 max-w-xs">
+            We craft high-performance digital <br> experiences that drive real <br> business results.
+          </p>
+
+          <!-- Social Icons -->
+          <div class="flex gap-4 mt-8">
+            <a href="#"
+              class="w-9 h-9 bg-gray-900 text-[#D5FE3C]   rounded-full flex items-center justify-center transition-all   hover:scale-125  duration-300">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#"
+              class="w-9 h-9 bg-gray-900 text-[#D5FE3C] rounded-full flex items-center justify-center    hover:scale-125  duration-300 transition-all">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#"
+              class="w-9 h-9 bg-gray-900 text-[#D5FE3C] rounded-full flex items-center justify-center  transition-all     hover:scale-125 duration-300">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="#"
+              class="w-9 h-9 bg-gray-900 text-[#D5FE3C] rounded-full flex items-center justify-center    hover:scale-125 transition-all duration-300">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="lg:col-span-2">
+          <h4 class="font-semibold text-lg mb-5">Quick Links</h4>
+          <ul class="space-y-3 text-gray-600">
+            <li><a href="/index.html" class="hover:text-black transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-black transition-colors">About</a></li>
+            <li><a href="blogs.html" class="hover:text-black transition-colors">Blog</a></li>
+            <li><a href="portfolio.html" class="hover:text-black transition-colors">Portfolio</a></li>
+            <li><a href="contact.html" class="hover:text-black transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Services -->
+        <div class="lg:col-span-3">
+          <h4 class="font-semibold text-lg mb-5">Services</h4>
+          <ul class="space-y-3 text-gray-600">
+            <li><a href="services.html" class="hover:text-black transition-colors">UI/UX Design</a></li>
+            <li><a href="#" class="hover:text-black transition-colors">Brand Design</a></li>
+            <li><a href="#" class="hover:text-black transition-colors">Webflow Development</a></li>
+            <li><a href="#" class="hover:text-black transition-colors">No-Code Development</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Column -->
+        <div class="lg:col-span-3">
+          <h4 class="font-semibold text-lg mb-5">Get the Latest Inspiration</h4>
+
+          <form id="newsletter-form" class="space-y-4">
+            <div>
+              <input type="email" id="email-input" placeholder="Enter your email *"
+                class="w-full px-5 py-2 border border-gray-300 rounded-[10px] focus:outline-none focus:border-black focus:ring-4 focus:ring-black/10 transition-all">
+              <p id="error-message" class="text-red-600 text-sm mt-1 hidden">This field is required.</p>
+            </div>
+
+            <button type="submit"
+              class="w-full bg-black py-2  rounded-[10px] font-normal text-white  hover:bg-[#282A32]   transition-all mt-4 hover:cursor-pointer">
+              Subscribe Now
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="mt-16 pt-8 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-6">
+          <p class="text-center text-gray-500 text-md">
+            Copyright © 2026 Web Rocket. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById("nav-toggle");
+    const mobileNav = document.getElementById("mobile-nav");
+    const navToggleIcon = document.getElementById("nav-toggle-icon");
+
+    navToggle.addEventListener("click", () => {
+      const isOpen = !mobileNav.classList.contains("hidden");
+      mobileNav.classList.toggle("hidden");
+      mobileNav.classList.toggle("flex");
+      navToggle.setAttribute("aria-expanded", String(!isOpen));
+      navToggleIcon.classList.toggle("fa-bars", isOpen);
+      navToggleIcon.classList.toggle("fa-xmark", !isOpen);
+    });
+  </script>
+</body>
+
+</html>

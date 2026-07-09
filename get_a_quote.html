@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get a Quote-Agency</title>
+  <link rel="stylesheet" href="output.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap" rel="stylesheet" />
+</head>
+
+<body class="">
+  <!-- Go to Top Button -->
+  <a href="/get_a_quote.html">
+    <button class="fixed bottom-6 text-white right-6 bg-black px-2 py-1 rounded-[2px] hover:cursor-pointer z-100"><i
+        class="fa-solid fa-angle-up"></i></button>
+  </a>
+  <!-- -----------Hero Section------------ -->
+  <div class="w-full bg-[#12141D] relative">
+    <!-- Upper hero: header + content (bg image ends at button center) -->
+    <div id="hero-upper" class="relative min-h-[450px] lg:min-h-[700px] lg:pt-7">
+      <img id="hero-bg" src="/images/hero_bg_.png" alt=""
+        class="absolute top-0 left-0 w-full h-full brightness-30 opacity-10 object-cover object-top z-0 pointer-events-none lg:h-[600px]" />
+
+      <!-- ---------Header-------- -->
+      <header
+        class="relative z-20 w-[90%] mx-auto grid grid-cols-[1fr_auto_1fr] items-center lg:mt-[20px] lg:mx-[20px]">
+        <a href="/index.html" class="shrink-0 col-start-1 justify-self-start">
+          <img src="/images/logo.svg" alt="Web Rocket logo" class="h-6 w-auto lg:h-8" />
+        </a>
+        <!-- Desktop navigation -->
+        <nav class="hidden lg:flex col-start-2 items-center gap-8 justify-self-center lg:ml-[30px]"
+          aria-label="Main navigation">
+          <a href="/about.html"
+            class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">About</a>
+          <a href="/services.html"
+            class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">Services</a>
+          <a href="/blogs.html"
+            class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">Blog</a>
+          <a href="/portfolio.html"
+            class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">Portfolio</a>
+          <a href="/careers.html"
+            class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">Careers</a>
+          <a href="/get_a_quote.html"
+            class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">Get a Quote</a>
+          <a href="/contact.html"
+            class="text-white text-[16px] font-medium hover:text-[#D2FF28] transition-colors">Contact</a>
+        </nav>
+
+        <!-- Mobile toggle button -->
+        <button id="nav-toggle" type="button"
+          class="lg:hidden col-start-3 justify-self-end text-white text-2xl p-2 hover:text-[#D2FF28] transition-colors hover:cursor-pointer"
+          aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <i class="fa-solid fa-bars text-[#D2FF28]" id="nav-toggle-icon"></i>
+        </button>
+      </header>
+
+      <!-- Mobile navigation -->
+      <nav id="mobile-nav"
+        class="hidden lg:hidden relative z-150 w-full h-auto mx-auto flex-col border-t border-white/10 pt-4 bg-white"
+        aria-label="Mobile navigation">
+        <a href="/about.html"
+          class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">About</a>
+        <a href="/services.html"
+          class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">Services</a>
+        <a href="/blogs.html"
+          class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">Blogs</a>
+        <a href="/portfolio.html"
+          class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">Portfolio</a>
+        <a href="/careers.html"
+          class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">Careers</a>
+        <a href="/get_a_quote.html"
+          class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">Get
+          a Quote</a>
+        <a href="/contact.html"
+          class="text-[#110b11] text-[15px] font-normal leading-[44px] pl-[20px] hover:bg-[#F3F3F3] transition-colors">Contact</a>
+        <button
+          class="hover:cursor-pointer my-6 bg-white h-11 w-full border-0 rounded-4xl font-bold hover:bg-[#8DB706] hover:text-[#12141D] duration-300">
+          Schedule a Call Now
+        </button>
+
+      </nav>
+      <!-- Hero content -->
+      <div
+        class="relative z-20 w-[90%] max-w-5xl mx-auto flex flex-col gap-[10px] items-center justify-start text-center px-4 lg:mt-[50px] md:gap-[30px]">
+        <h1
+          class="mt-10 text-white text-[42px] font-[600] leading-[50px] font-['Urbanist'] md:text-[42px] md:leading-[50px] lg:text-[68px] lg:leading-[82px]">
+          Let’s Bring Ideas to Life
+        </h1>
+        <p class="text-white text-[16px] font-['Poppins, sans-serif'] font-normal leading-[25px] mb-3 max-w-xl">
+          Get a custom quote tailored to your unique project needs.
+        </p>
+      </div>
+      <!-- Hero image -->
+      <img src="/images/hero_slider_1.png" alt="not found"
+        class="w-[90%] absolute left-1/2 -translate-x-1/2 bottom-[-60px] h-70 md:h-100 md:bottom-[-180px] lg:h-full lg:bottom-[-350px] rounded-2xl z-20">
+
+    </div>
+    <!-- Vertical CTA — large screens only -->
+    <a href="#" aria-label="Schedule a Call Now"
+      class="hidden lg:flex lg:mt-10 absolute right-0 top-0 z-20 h-[40px] w-45 mt-[15px] py-[15px]   bg-white hover:bg-[#D2FF28] rounded-full transition-colors duration-300 items-center justify-center group mr-[20px]">
+      <span
+        class="flex flex-col items-center justify-center text-[14px] font-semibold leading-[21px] text-[#12141D] select-none">
+        Schedule a Call Now
+    </a>
+  </div>
+
+  <!-- ---------- Quote Section ---------- -->
+  <div class="w-full sm:py-20 md:pt-35 lg:pt-80 px-4 z-10 relative">
+    <div class="w-full max-w-[600px] mx-auto mt-20">
+      <h1
+        class="text-2xl sm:text-3xl lg:text-[43px] text-['Urbanist'] font-medium lg:leading-[53px] text-center leading-tight">
+        Let's Turn Your Vision Into a Powerful Reality
+      </h1>
+      <p class="text-sm sm:text-base lg:text-[17px] text-center tracking-wide pt-4 sm:pt-6">
+        Share your project details, and we'll provide a tailored quote that
+        aligns with your goals and budget. Our team is ready to bring your
+        ideas to life with creativity, strategy, and precision.
+      </p>
+    </div>
+
+    <!-- Quote Form -->
+    <div
+      class="bg-white border border-gray-200 rounded-3xl sm:rounded-4xl shadow-sm p-5 sm:p-8 lg:p-10 w-full max-w-[800px] mx-auto mt-12 sm:mt-16 lg:mt-20">
+      <form class="space-y-6">
+        <!-- Your Name -->
+        <div>
+          <label class="block font-semibold text-gray-900 mb-2">
+            Your name <span class="text-red-500">*</span>
+          </label>
+          <input type="text"
+            class="w-full h-[43px] bg-gray-100 border border-gray-300 hover:border-gray-500 duration-300 rounded-lg px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-300" />
+        </div>
+
+        <!-- Your Email -->
+        <div>
+          <label class="block font-semibold text-gray-900 mb-2">
+            Your email <span class="text-red-500">*</span>
+          </label>
+          <input type="email"
+            class="w-full h-[43px] bg-gray-100 border border-gray-300 hover:border-gray-500 duration-300 rounded-lg px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-300" />
+        </div>
+
+        <!-- Phone Number -->
+        <div>
+          <label class="block font-semibold text-gray-900 mb-2">
+            Phone number <span class="text-red-500">*</span>
+          </label>
+          <div
+            class="w-full h-[43px] flex items-center bg-gray-100 border border-gray-300 hover:border-gray-500 duration-300 rounded-lg px-3 focus-within:ring-2 focus-within:ring-gray-300">
+            <span class="mr-2">🇺🇸</span>
+            <span class="text-gray-700 mr-2">+1</span>
+            <input type="tel" class="flex-1 min-w-0 bg-transparent focus:outline-none text-gray-700" />
+          </div>
+        </div>
+
+        <!-- Select Services -->
+        <div>
+          <label class="block font-semibold text-gray-900 mb-2">
+            Select your services <span class="text-red-500">*</span>
+          </label>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+            <label
+              class="flex items-center justify-between bg-gray-100 border border-gray-300 hover:border-gray-500 duration-300 rounded-lg px-4 py-3 h-[45px] cursor-pointer">
+              <span class="text-gray-800">UI/UX Design</span>
+              <input type="checkbox" class="w-4 h-4 rounded border-gray-400 text-gray-800 focus:ring-0" />
+            </label>
+
+            <label
+              class="flex items-center justify-between bg-gray-100 border border-gray-300 hover:border-gray-500 duration-300 rounded-lg px-4 py-3 h-[45px] cursor-pointer">
+              <span class="text-gray-800">Brand Design</span>
+              <input type="checkbox" class="w-4 h-4 rounded border-gray-400 text-gray-800 focus:ring-0" />
+            </label>
+
+            <label
+              class="flex items-center justify-between bg-gray-100 border border-gray-300 hover:border-gray-500 duration-300 rounded-lg px-4 py-3 h-[45px] cursor-pointer">
+              <span class="text-gray-800">Webflow Devlopment</span>
+              <input type="checkbox" class="w-4 h-4 rounded border-gray-400 text-gray-800 focus:ring-0" />
+            </label>
+
+            <label
+              class="flex items-center justify-between bg-gray-100 border border-gray-300 hover:border-gray-500 duration-300 rounded-lg px-4 py-3 h-[45px] cursor-pointer">
+              <span class="text-gray-800">No-code Development</span>
+              <input type="checkbox" class="w-4 h-4 rounded border-gray-400 text-gray-800 focus:ring-0" />
+            </label>
+          </div>
+        </div>
+
+        <!-- Project Description -->
+        <div>
+          <label class="block font-semibold text-gray-900 mb-2">
+            Briefly describe your project
+          </label>
+          <textarea rows="4"
+            class="w-full bg-gray-100 border border-gray-300 hover:border-gray-500 duration-300 rounded-lg px-4 py-3 text-gray-700 resize focus:outline-none focus:ring-2 focus:ring-gray-300"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+          <button type="submit"
+            class="w-full sm:w-auto bg-gray-900 text-white font-semibold px-8 py-3 rounded-lg hover:bg-gray-800 transition">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Meet The Team / hero footer -->
+  <div
+    class="w-full bg-[#12141D] relative h-120 md:h-130 lg:h-screen flex flex-col gap-5 justify-center items-center overflow-hidden">
+
+    <!-- Background W Shape -->
+    <div
+      class="absolute inset-0 bg-[url('images/hero_bg_.png')] brightness-40 opacity-10 object-cover object-top object-left bg-cover bg-center  pointer-events-none">
+    </div>
+
+
+    <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+
+      <!-- Profile Image -->
+      <div class="w-20 h-20 mx-auto mb-8 rounded-full overflow-hidden shadow-2xl">
+        <img src="/images/index_boy_wearing_glasses1.png" alt="Lead Designer" class="w-full h-full object-cover">
+      </div>
+
+      <!-- Heading -->
+      <h2
+        class="text-3xl md:text-4xl font-semibold md:text-[44px] md:leading-[53px] font-['Urbanist'] text-white leading-tight mb-4">
+        Meet the Minds Behind the Magic
+      </h2>
+
+      <p class="text-white text-[15px] leading-[25px] md:text-[17px] md:leading-[27px] max-w-md mx-auto mb-10 ">
+        Get a free 30-minute strategy session with our lead designer.
+      </p>
+
+      <!-- CTA Button -->
+      <a href="#"
+        class="inline-block bg-[#D2FF28] hover:bg-[#B0E600] text-[#12141D] font-semibold text-md px-10 py-3 rounded-full transition-all  mb-10">
+        Book a Free Call
+      </a>
+
+      <!-- Email Option -->
+      <div class="">
+        <p class="text-white text-sm mb-1">Prefer Email?</p>
+        <a href="mailto:chris@webrocket.studio"
+          class="text-white hover:text-[#D2FF28] underline underline-offset-4 transition-colors">
+          <strong>chris@webrocket.studio</strong>
+        </a>
+      </div>
+
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-white pt-16 pb-10 border-t relative">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-10">
+
+        <!-- Column 1: Logo + Description -->
+        <div class="lg:col-span-4 ">
+          <div class="flex items-center gap-2 mb-2">
+            <!-- <span class="text-3xl font-bold text-[#D2FF28]">W</span> -->
+            <span><img src="images/footer-logo1.svg" alt="image is not found"></span>
+            <!-- <span class="text-2xl font-semibold tracking-tight">EB ROCKET</span> -->
+          </div>
+          <p class="text-gray-700 max-w-xs">
+            We craft high-performance digital <br> experiences that drive real <br> business results.
+          </p>
+
+          <!-- Social Icons -->
+          <div class="flex gap-4 mt-8">
+            <a href="#"
+              class="w-9 h-9 bg-gray-900 text-[#D5FE3C]   rounded-full flex items-center justify-center transition-all   hover:scale-125  duration-300">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#"
+              class="w-9 h-9 bg-gray-900 text-[#D5FE3C] rounded-full flex items-center justify-center    hover:scale-125  duration-300 transition-all">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#"
+              class="w-9 h-9 bg-gray-900 text-[#D5FE3C] rounded-full flex items-center justify-center  transition-all     hover:scale-125 duration-300">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="#"
+              class="w-9 h-9 bg-gray-900 text-[#D5FE3C] rounded-full flex items-center justify-center    hover:scale-125 transition-all duration-300">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="lg:col-span-2">
+          <h4 class="font-semibold text-lg mb-5">Quick Links</h4>
+          <ul class="space-y-3 text-gray-600">
+            <li><a href="/index.html" class="hover:text-black transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-black transition-colors">About</a></li>
+            <li><a href="blogs.html" class="hover:text-black transition-colors">Blog</a></li>
+            <li><a href="portfolio.html" class="hover:text-black transition-colors">Portfolio</a></li>
+            <li><a href="contact.html" class="hover:text-black transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Services -->
+        <div class="lg:col-span-3">
+          <h4 class="font-semibold text-lg mb-5">Services</h4>
+          <ul class="space-y-3 text-gray-600">
+            <li><a href="services.html" class="hover:text-black transition-colors">UI/UX Design</a></li>
+            <li><a href="#" class="hover:text-black transition-colors">Brand Design</a></li>
+            <li><a href="#" class="hover:text-black transition-colors">Webflow Development</a></li>
+            <li><a href="#" class="hover:text-black transition-colors">No-Code Development</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Column -->
+        <div class="lg:col-span-3">
+          <h4 class="font-semibold text-lg mb-5">Get the Latest Inspiration</h4>
+
+          <form id="newsletter-form" class="space-y-4">
+            <div>
+              <input type="email" id="email-input" placeholder="Enter your email *"
+                class="w-full px-5 py-2 border border-gray-300 rounded-[10px] focus:outline-none focus:border-black focus:ring-4 focus:ring-black/10 transition-all">
+              <p id="error-message" class="text-red-600 text-sm mt-1 hidden">This field is required.</p>
+            </div>
+
+            <button type="submit"
+              class="w-full bg-black py-2  rounded-[10px] font-normal text-white  hover:bg-[#282A32]   transition-all mt-4 hover:cursor-pointer">
+              Subscribe Now
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="mt-16 pt-8 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-6">
+          <p class="text-center text-gray-500 text-md">
+            Copyright © 2026 Web Rocket. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById("nav-toggle");
+    const mobileNav = document.getElementById("mobile-nav");
+    const navToggleIcon = document.getElementById("nav-toggle-icon");
+
+    navToggle.addEventListener("click", () => {
+      const isOpen = !mobileNav.classList.contains("hidden");
+      mobileNav.classList.toggle("hidden");
+      mobileNav.classList.toggle("flex");
+      navToggle.setAttribute("aria-expanded", String(!isOpen));
+      navToggleIcon.classList.toggle("fa-bars", isOpen);
+      navToggleIcon.classList.toggle("fa-xmark", !isOpen);
+    });
+  </script>
+</body>
+
+</html>
